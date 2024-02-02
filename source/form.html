@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo"> <img class="main-header__logo-image" src="img/logo.svg" width="33" height="38"
+        alt="логотип Cat Energy.">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#">
+              <img class="main-header__logo-image logo-cat-energy" src="img/logo-2-cat-energy.svg" width="101"
+                height="18" alt="Cat Energy.">
+            </a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--current">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-wrapper">
+    <h1 class="visually-hidden">Форма подбора программы</h1>
+
+    <form class="nutrition" action="https://echo.htmlacademy.ru/" method="post">
+<p class="nutrition__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+<div class="nutrition__client">
+  <p class="client__name">
+    <label class="form-label" for="client__name">
+      ИМЯ:*
+    </label>
+    <input class="field" type="text" id="client__name" name="client__name"
+      placeholder="барсик" required>
+  </p>
+  <p class="client__weight">
+    <label class="form-label" for="client__weight">
+      Вес (кг):*
+    </label>
+    <input class="field" type="text" id="client__weight" name="client__weight"
+      placeholder="7" required>
+  </p>
+  <p class="client__age">
+    <label class="form-label" for="client__age">
+      Возраст (лет):
+    </label>
+    <input class="field" type="text" id="client__age" name="client__age"
+      placeholder="7" required>
+  </p>
+</div>
+
+<fieldset class="nutrition__solution">
+  <div class="nutrition__solution__wrapper">
+    <legend class="nutrition__solution__title visually-hidden">Выбор программы</legend>
+<ul class="nutrition__solution__list">
+<li class="nutrition__solution__item">
+  <label class="item__select">
+    <input class="item__select__input" type="radio" name="slim" value="none" checked>
+    <span>Похудение</span>
+  </label>
+</li>
+<li class="nutrition__solution__item">
+  <label class="item__select">
+    <input class="item__select__input" type="radio" name="pro" value="none">
+    <span>Набор массы</span>
+  </label>
+</li>
+<li class="nutrition__solution__item">
+  <label class="item__select">
+    <input class="item__select__input" type="radio" name="advise" value="none">
+    <span>Не знаю (Нужен ваш совет)</span>
+  </label>
+</li>
+</ul>
+  </div>
+</fieldset>
+
+<div class="nutrition__client-owner">
+  <h2 class="nutrition__client-owner__title">Контактные данные (владельца кота)</h2>
+  <p class="client-owner__mail">
+    <label class="form-label" for="client-owner__mail">
+      E-mail:*
+    </label>
+    <input class="field" type="email" id="client-owner__mail" name="client-owner__mail"
+      placeholder="kuklachev@gmail.com" required>
+  </p>
+   <p class="client-owner__phone">
+    <label class="form-label" for="client-owner__phone">
+      Телефон:*
+    </label>
+    <input class="field" type="tel" id="client-owner__phone" name="client-owner__phone"
+      placeholder="8 (960) 900-60-90" required>
+  </p>
+</div>
+<div class="nutrition__order-comment">
+  <h2 class="nutrition__order-comment__title">Комментарий</h2>
+  <p class="nutrition__order-comment__text">
+    <label class="form-label" for="nutrition__order-comment__text">
+      </label>
+    <input class="field" type="textarea" id="nutrition__order-comment__text" name="nutrition__order-comment__text"
+      placeholder="Расскажите обо всех повАдках кота">
+  </p>
+</div>
+
+<fieldset class="nutrition__additional">
+  <div class="nutrition__additional__wrapper">
+    <legend class="nutrition__additional__title">Дополнительно</legend>
+<ul class="nutrition__additional__list">
+<li class="nutrition__additional__item">
+  <label class="additional__item__select">
+    <input class="additional__item__select__input" type="checkbox" name="sugar" value="none" checked>
+    <span>Сахарозаменитель</span>
+  </label>
+</li>
+<li class="nutrition__additional__item">
+  <label class="additional__item__select">
+    <input class="additional__item__select__input" type="checkbox" name="water" value="none">
+    <span>питьевая вода</span>
+  </label>
+</li>
+<li class="nutrition__additional__item">
+  <label class="additional__item__select">
+    <input class="additional__item__select__input" type="checkbox" name="milk" value="none">
+    <span>молоко</span>
+  </label>
+</li>
+<li class="nutrition__additional__item">
+  <label class="additional__item__select">
+    <input class="additional__item__select__input" type="checkbox" name="vitamins" value="none">
+    <span>витамины</span>
+  </label>
+</li>
+</ul>
+  </div>
+</fieldset>
+
+
+<button class="nutrition__button button-main"  type="submit">
+  Отправить заявку
+</button>
+<small class="nutrition__legend">* — Обязательные поля</small>
+
+    </form>
+
+    <section class="for-dillers">
+      <h2 class="visually-hidden">Сотрудничество с диллерами</h2>
+      <p class="for-dillers__title">приглашаем к сотрудничеству дилеров!</p>
+      <p class="for-dillers__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <!-- <img class="for-dillers__map" src="#" alt="Расположение офиса Cat Energy на карте."> -->
+      <div class="for-dillers__map"></div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <img class="main-footer__logo-image logo-cat-energy" src="img/logo-2-cat-energy.svg" width="101" height="18"
+          alt="Cat Energy.">
+        </a>
+
+        <ul class="main-footer__social-media-list">
+          <li class="main-footer__social-media-item">
+            <a class="social-media-item__link vk-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="main-footer__social-media-item">
+            <a class="social-media-item__link youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+          <li class="main-footer__social-media-item">
+            <a class="social-media-item__link telegram-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <a class="main-footer__copyright" href="">
+          <p class="copyright__text">HTML Academy</p>
+          <img class="copyright__logo" src="img/logo-html-academy.svg" alt="Логотип HTML-Академии.">
+        </a>
+      </div>
+  </main>
+</body>
+
+</html>
