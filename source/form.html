@@ -12,28 +12,26 @@
     <a class="main-header__logo"> <img class="main-header__logo-image" src="img/logo.svg" width="33" height="38"
         alt="логотип Cat Energy.">
     </a>
+    <a class="main-header__logo-additional logo-cat-energ" href="#">
+      <img class="main-header__logo-image logo-cat-energy" src="img/logo-2-cat-energy.svg" width="101"
+        height="18" alt="Cat Energy.">
+    </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a href="#">
-              <img class="main-header__logo-image logo-cat-energy" src="img/logo-2-cat-energy.svg" width="101"
-                height="18" alt="Cat Energy.">
-            </a>
-          </li>
           <li class="main-navigation__item main-navigation__item--current">
-            <a href="index.html">
+            <a class="main-navigation__item__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-navigation__item">
-            <a href="catalog.html">
+            <a class="main-navigation__item__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-navigation__item">
-            <a href="#">
+            <a class="main-navigation__item__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -42,7 +40,9 @@
     </nav>
   </header>
   <main class="main-wrapper">
-    <h1 class="main-wrapper__title">Подбор программы</h1>
+    <h1 class="main-wrapper__title visually-hidden">Подбор программы</h1>
+    <section class="form">
+      <h1 class="form__title">Подбор программы</h1>
     <form class="nutrition" action="https://echo.htmlacademy.ru/" method="post">
       <p class="nutrition__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <div class="nutrition__client">
@@ -91,7 +91,7 @@
         </ul>
       </fieldset>
       <div class="nutrition__client-owner">
-        <h2 class="nutrition__client-owner__title">Контактные данные (владельца кота)</h2>
+        <h2 class="nutrition__client-owner__title nutrition__titles">Контактные данные (владельца кота)</h2>
         <p class="nutrition__client-owner__mail">
           <label class="form-label" for="nutrition__client-owner__mail">
             E-mail:*
@@ -108,7 +108,7 @@
         </p>
       </div>
       <div class="nutrition__order-comment">
-        <h2 class="nutrition__order-comment__title">Комментарий</h2>
+        <h2 class="nutrition__order-comment__title nutrition__titles">Комментарий</h2>
         <p class="nutrition__order-comment__text">
           <label class="form-label" for="nutrition__order-comment__text">
           </label>
@@ -118,7 +118,7 @@
       </div>
       <fieldset class="nutrition__additional">
         <h2 class="visually-hidden">Заказать дополнительные ингридиенты</h2>
-        <legend class="nutrition__additional__title">Дополнительно</legend>
+        <legend class="nutrition__additional__title nutrition__titles">Дополнительно</legend>
         <ul class="nutrition__additional__list">
           <li class="nutrition__additional__item">
             <label class="nutrition__additional__item__select">
@@ -152,6 +152,7 @@
       </button>
       <small class="nutrition__legend">* — Обязательные поля</small>
     </form>
+  </section>
     <section class="for-dillers">
       <h2 class="visually-hidden">Сотрудничество с диллерами</h2>
       <p class="for-dillers__title">приглашаем к сотрудничеству дилеров!</p>
