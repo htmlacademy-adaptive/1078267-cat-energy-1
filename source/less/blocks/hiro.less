@@ -1,20 +1,22 @@
-.hiro__wrapper {
-  margin: 0;
-  padding: 27px 20px 0 20px;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  background-color: #68b738d9;
-  color: #ffffff;
-  background-image: url("../../img/hiro-background.png");
-  background-repeat: no-repeat;
-}
+.hiro {
+  &__wrapper {
+    margin: 0;
+    padding: 27px 20px 0 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @basic_green;
+    color: @basic_white;
+    background-image: url("../../img/hiro-background.png");
+    background-repeat: no-repeat;
+  }
 
-.hiro__title {
-  font-size: 36px;
-  line-height: 36px;
-}
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
-.hiro__description {
-  text-transform: uppercase;
+  &__description {
+    text-transform: uppercase;
+  }
 }

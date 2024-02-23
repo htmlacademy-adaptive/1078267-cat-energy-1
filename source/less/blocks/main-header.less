@@ -4,16 +4,18 @@
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
-  color: #000000;
+  color: @basic_black;
 }
 
-.main-navigation__list {
-  padding: 0;
-  list-style-type: none;
-}
+.main-navigation {
+  &__list {
+    padding: 0;
+    list-style-type: none;
+  }
 
-.main-navigation__link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @basic_black;
+  }
 }
