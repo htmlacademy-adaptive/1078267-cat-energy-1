@@ -47,22 +47,22 @@
         <div class="form__client">
           <h2 class="visually-hidden">Характеристики клиента</h2>
           <span class="form__text">
-            <label class="form-label" for="client-name">
+            <label class="form__label" for="client-name">
               ИМЯ:*
             </label>
-            <input class="field" type="text" id="client-name" name="client-name" placeholder="барсик" required>
+            <input class="form__field" type="text" id="client-name" name="client-name" placeholder="барсик" required>
           </span>
           <span class="form__text">
-            <label class="form-label" for="client-weight">
+            <label class="form__label" for="client-weight">
               Вес (кг):*
             </label>
-            <input class="field" type="text" id="client-weight" name="client-weight" placeholder="7" required>
+            <input class="form__field" type="text" id="client-weight" name="client-weight" placeholder="7" required>
           </span>
           <span class="form__text">
-            <label class="form-label" for="client-age">
+            <label class="form__label" for="client-age">
               Возраст (лет):
             </label>
-            <input class="field" type="text" id="client-age" name="client-age" placeholder="7" required>
+            <input class="form__field" type="text" id="client-age" name="client-age" placeholder="7" required>
           </span>
         </div>
         <fieldset class="form__solution">
@@ -91,26 +91,26 @@
         <div class="form__owner">
           <h2 class="form__title">Контактные данные (владельца кота)</h2>
           <span class="form__text">
-            <label class="form-label" for="owner-mail">
+            <label class="form__label" for="owner-mail">
               E-mail:*
             </label>
-            <input class="field" type="email" id="owner-mail" name="owner-mail"
-              placeholder="kuklachev@gmail.com" required>
+            <input class="form__field" type="email" id="owner-mail" name="owner-mail" placeholder="kuklachev@gmail.com"
+              required>
           </span>
           <span class="form__text">
-            <label class="form-label" for="owner-phone">
+            <label class="form__label" for="owner-phone">
               Телефон:*
             </label>
-            <input class="field" type="tel" id="owner-phone" name="owner-phone"
-              placeholder="8 (960) 900-60-90" required>
+            <input class="form__field" type="tel" id="owner-phone" name="owner-phone" placeholder="8 (960) 900-60-90"
+              required>
           </span>
         </div>
         <div class="form__comment">
           <h2 class="form__title">Комментарий</h2>
           <p class="form__comment-text">
-            <label class="form-label" for="comment-text">
+            <label class="form__label" for="comment-text">
             </label>
-            <input class="field" type="text" id="comment-text" name="comment-text"
+            <input class="form__field" type="text" id="comment-text" name="comment-text"
               placeholder="Расскажите обо всех повАдках кота">
           </p>
         </div>
@@ -120,8 +120,7 @@
           <ul class="form__additional-list form-list">
             <li class="form__additional-item form-item">
               <label class="form__select">
-                <input class="form__input" type="checkbox" name="sugar" value="none"
-                  checked>
+                <input class="form__input" type="checkbox" name="sugar" value="none" checked>
                 <span>Сахарозаменитель</span>
               </label>
             </li>
@@ -164,20 +163,22 @@
         <img class="main-footer__image logo-cat-energy-image" src="img/logo-2-cat-energy.svg" width="101" height="18"
           alt="Cat Energy.">
       </a>
-
       <ul class="main-footer__social-media-list">
         <li class="main-footer__social-media-item">
-          <a class="main-footer__social-media-link vk-link" href="https://vk.com/htmlacademy">
+          <a class="main-footer__social-media-link main-footer__social-media-link--vk"
+            href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="main-footer__social-media-item">
-          <a class="main-footer__social-media-link youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="main-footer__social-media-link main-footer__social-media-link--youtube"
+            href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
         <li class="main-footer__social-media-item">
-          <a class="main-footer__social-media-link telegram-link" href="https://t.me/htmlacademy">
+          <a class="main-footer__social-media-link main-footer__social-media-link--telegram"
+            href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
