@@ -5,11 +5,19 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     list-style-type: none;
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+    }
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: @basic_grey;
   }
 
@@ -19,6 +27,10 @@
     line-height: 37px;
     color: @basic_black;
     text-transform: uppercase;
+    align-self: center;
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+      align-self: flex-start;
+    }
   }
 
   &__description {

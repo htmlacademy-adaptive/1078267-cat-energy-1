@@ -7,18 +7,32 @@
   font-size: 20px;
   line-height: 20px;
   color: @basic_black;
-  }
 
-.main-header__logo {
-  @media (min-width: @desktop-width) {
-    height: 50px;
+  &__logo-image {
+    width: 33px;
+    height: 38px;
+    @media (min-width: @tablet-width) {
+      width: 60px;
+      height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      height: 59px;
+    }
   }
 }
 
 .main-navigation {
   &__list {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     list-style-type: none;
+
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+    }
   }
 
   &__link {
