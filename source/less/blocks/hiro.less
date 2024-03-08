@@ -8,6 +8,10 @@
     font-family: "Oswald", sans-serif;
     font-size: 14px;
     line-height: 14px;
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
     background-color: @basic_green;
     color: @basic_white;
     background-image: url("../../img/hiro-background.png");
@@ -26,6 +30,10 @@
     line-height: 36px;
     @media (min-width: @tablet-width) and (max-width: @desktop-width) {
       align-self: center;
+    }
+    @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
     }
   }
 
