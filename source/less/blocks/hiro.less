@@ -1,19 +1,43 @@
 .hiro {
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 27px 20px 0 20px;
     font-family: "Oswald", sans-serif;
     font-size: 14px;
     line-height: 14px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
     background-color: @basic_green;
     color: @basic_white;
     background-image: url("../../img/hiro-background.png");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      align-items: flex-start;
+      background-color: @basic_white;
+      color: @basic_black;
+      background-image: none;
+    }
   }
 
   &__title {
     font-size: 36px;
     line-height: 36px;
+
+    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+      align-self: center;
+    }
+
+    @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &__description {
