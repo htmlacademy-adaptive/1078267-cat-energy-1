@@ -7,6 +7,15 @@
   min-height: 65px;
   margin: 0 auto;
   padding: 13px 20px 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 34px 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 55px 110px 0;
+  }
+
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -82,7 +91,14 @@
     }
   }
 
-  &__wrapper {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
     @media (max-width: @mobile-width) {
       align-self: center;
       margin: 0 auto;
@@ -93,15 +109,6 @@
       z-index: 10;
       background-color: @basic_white;
     }
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 
     @media (min-width: @tablet-width) {
       flex-direction: row;
@@ -188,28 +195,28 @@
       @media (max-width: @desktop-width) {
         position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -11px;
-        left: 0;
-        height: 2px;
-        background-color: @basic_green;
-      }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 10px;
+          left: 0;
+          height: 2px;
+          background-color: @basic_green;
+        }
       }
       @media (min-width: @desktop-width) {
         position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -11px;
-        left: 0;
-        height: 2px;
-        background-color: @basic_white;
-      }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: -11px;
+          left: 0;
+          height: 2px;
+          background-color: @basic_white;
+        }
       }
     }
   }
@@ -269,7 +276,7 @@
   }
 }
 
-.main-navigation--nojs .main-navigation {
+.main-navigation--nojs .main-navigation__toggle {
   @media (max-width: @mobile-width) {
     display: none;
   }
