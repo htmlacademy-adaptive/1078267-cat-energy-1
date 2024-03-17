@@ -5,7 +5,6 @@
   align-items: center;
   width: 280px;
   min-height: 65px;
-  box-sizing: border-box;
   margin: 0 auto;
   padding: 13px 20px 15px;
   font-family: "Oswald", sans-serif;
@@ -26,6 +25,14 @@
     width: 1220px;
   }
 
+  &__logo {
+    text-decoration: none;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 13px;
+    }
+  }
+
   &__logo-image {
     width: 33px;
     height: 38px;
@@ -44,6 +51,9 @@
 
 .logo-cat-energy {
   text-decoration: none;
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .logo-cat-energy-image {
@@ -52,6 +62,7 @@
 }
 
 .main-navigation {
+  display: flex;
   position: relative;
   &__toggle {
     position: absolute;
@@ -73,10 +84,12 @@
 
   &__wrapper {
     @media (max-width: @mobile-width) {
+      align-self: center;
+      margin: 0 auto;
       position: absolute;
       top: 30px;
-      right: -40px;
-      width: 100vw;
+      right: -20px;
+      width: 320px;
       z-index: 10;
       background-color: @basic_white;
     }
@@ -111,8 +124,36 @@
     }
   }
 
+  &__item--current {
+    @media (min-width: @tablet-width) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        background: @basic_green;
+      }
+    }
+    @media (min-width: @desktop-width) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+        height: 2px;
+        background: @basic_white;
+      }
+    }
+  }
+
   &__link {
-    display: block;
     padding: 22px 70px 24px;
     text-transform: uppercase;
     text-decoration: none;
@@ -120,6 +161,7 @@
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     line-height: 20px;
+    cursor: pointer;
 
     @media (min-width: @tablet-width) and (max-width: @desktop-width) {
       padding: 0;
@@ -131,8 +173,48 @@
       padding: 0;
       color: @basic_white;
     }
+
+    &:hover {
+      @media (max-width: @desktop-width) {
+        color: fade(@basic_black, 60%);
+      }
+
+      @media (min-width: @desktop-width) {
+        color: fade(@basic_white, 60%);
+      }
+    }
+
+    &:active {
+      @media (max-width: @desktop-width) {
+        position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -11px;
+        left: 0;
+        height: 2px;
+        background-color: @basic_green;
+      }
+      }
+      @media (min-width: @desktop-width) {
+        position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -11px;
+        left: 0;
+        height: 2px;
+        background-color: @basic_white;
+      }
+      }
+    }
   }
 }
+
 .main-navigation--closed .main-navigation__toggle::before {
   position: absolute;
   content: "";
