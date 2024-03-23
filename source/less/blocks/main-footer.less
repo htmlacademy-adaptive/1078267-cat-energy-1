@@ -1,7 +1,4 @@
 .main-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   padding: 0;
   width: 280px;
@@ -13,20 +10,116 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-color: @basic_grey;
     width: 1220px;
   }
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    margin: 0 -20px;
+    background-color: @basic_grey;
+    padding: 20px;
+
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 708px;
+      margin: 0 -30px;
+      padding: 55px 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 1220px;
+      margin: 0 -110px;
+      padding: 66px 110px;
+    }
+  }
+
+  &__image {
+    width: 128px;
+    height: 24px;
+    padding: 20px 76px;
+    border-bottom: 1px solid @special_grey-3;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 160px;
+      padding: 6.5px 0;
+      border-bottom: none;
+    }
+  }
+
   &__social-media-list {
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 132px;
+    margin: 0;
+    padding: 20px 74px;
     list-style-type: none;
+    border-bottom: 1px solid @special_grey-3;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 120px;
+      border-bottom: none;
+      padding: 8px 0 7px;
+    }
+  }
+
+  &__social-media-item {
+    padding-right: 24px;
+  }
+
+  &__social-media-item:nth-child(3n) {
+    padding-right: 0;
+  }
+
+  &__social-media-link {
+    display: block;
+    width: 28px;
+    height: 22px;
+  }
+
+  &__social-media-link--vk {
+    background-image: url("../../img/vk.svg");
+    background-size: 28px 22px;
+    background-repeat: no-repeat;
+  }
+
+  &__social-media-link--youtube {
+    background-image: url("../../img/youtube.svg");
+    background-size: 28px 22px;
+    background-repeat: no-repeat;
+  }
+
+  &__social-media-link--telegram {
+    background-image: url("../../img/telegram.svg");
+    background-size: 28px 22px;
+    background-repeat: no-repeat;
   }
 
   &__copyright {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 20px;
     color: @special_dark-grey;
     text-decoration: none;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
+  }
+  &__copyright-text {
+    margin: 0;
+    margin-right: 147px;
+    min-width: 113px;
+    align-self: center;
+    @media (min-width: @tablet-width) {
+      margin-right: 20px;
+    }
   }
 }
