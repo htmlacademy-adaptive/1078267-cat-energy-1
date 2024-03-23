@@ -1,8 +1,17 @@
 .contacts {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+
+  &__wrapper {
+    display: flex;
+    padding: 26px 0;
+
+    @media (min-width: @tablet-width) {
+      padding: 60px 50px;
+    }
+  }
 
   &__title {
     margin: 0;
@@ -32,4 +41,13 @@
     }
     color: @special_dark-grey;
   }
+
+  &__map {
+margin: 0 -20px;
+  }
+}
+
+.contacts iframe {
+  border: none;
+  display: block;
 }

@@ -20,24 +20,24 @@
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
 
 
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item main-navigation__item--current">
+          <a class="main-navigation__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
   </header>
   <main class="main-wrapper">
@@ -55,13 +55,13 @@
         <h2 class="visually-hidden">Основные продукты</h2>
         <ul class="offers__list">
           <li class="offers__item offers__item--slim">
-            <h3 class="offers__title">Похудение</h3>
+            <h3 class="offers__title offers__title--slim">Похудение</h3>
             <p class="offers__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="offers__link" href="#">Каталог slim</a>
           </li>
           <li class="offers__item offers__item--pro">
-            <h3 class="offers__title">Набор массы</h3>
+            <h3 class="offers__title offers__title--pro">Набор массы</h3>
             <p class="offers__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="offers__link" href="#">Каталог pro</a>
@@ -101,18 +101,30 @@
             <span class="example__item-description">затрачено времени</span>
           </li>
         </ul>
-        <span class="example__text">Затраты на питание: 15 000 РУБ.</span>
+        <div class="example__text-wrapper">
+          <span class="example__text example__text--spending ">Затраты на
+            питание:</span>
+          <span class="example__text example__text--spending ">15 000 РУБ.</span>
+        </div>
       </div>
-      <img class="example__image example__image--fat" src="img/cat-fat.png"
-        alt="Фото кота до использования питания Cat Energy.">
-      <img class="example__image example__image--slim" src="img/cat-slim.png"
-        alt="Фото кота после использования питания Cat Energy.">
+      <div class="example__decoration"></div>
+      <!-- <img class="example__image" src="img/example-before-after.png" alt="Фото примера кота до и после"> -->
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Сотрудничество с диллерами</h2>
-      <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div class="contacts__map"></div>
+      <div class="contacts__wrapper">
+        <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.32047247715258!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1711226086790!5m2!1sru!2sru"
+        width="320"
+        height="362"
+        allowfullscreen
+        title="Офис компании по адресу Большая Конюшенная ул., 19/8, Санкт-Петербург"
+      ></iframe>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
