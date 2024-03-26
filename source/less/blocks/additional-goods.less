@@ -12,23 +12,64 @@
   }
 
   &__title {
+    position: relative;
     margin: 0;
     margin-bottom: 36px;
+    margin-left: -20px;
     padding: 0;
     font-family: "Oswald", sans-serif;
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
     color: @basic_black;
+    padding-right: 20px;
+    padding-left: 20px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 80px;
       font-size: 36px;
       line-height: 36px;
+      margin-left: -30px;
+      padding-right: 40px;
+      padding-left: 40px;
     }
 
-    @media (min-width: @desktop-width)  {
+    @media (min-width: @desktop-width) {
       margin-bottom: 76px;
+    }
+  }
+  &__title::before {
+    position: absolute;
+    content: "";
+    width: 1000%;
+    height: 2px;
+    background-color: @basic_green;
+    top: 14px;
+    left: 246px;
+
+    @media (min-width: @tablet-width) {
+      top: 20px;
+      left: 418px;
+    }
+  }
+
+  &__title::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      width: 3%;
+      height: 2px;
+      background-color: @basic_green;
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &__title::after {
+    @media (min-width: @desktop-width) {
+      width: 7%;
+      top: 20px;
+      left: -90px;
     }
   }
 
@@ -37,8 +78,9 @@
     flex-direction: column;
 
     @media (min-width: @desktop-width) {
-      flex-direction: row;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
     }
   }
 
@@ -56,12 +98,13 @@
     }
 
     @media (min-width: @desktop-width) {
+      margin-right: 81px;
       padding-bottom: 0;
-
     }
   }
 
   &__item {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -75,11 +118,13 @@
     }
 
     @media (min-width: @desktop-width) {
-      flex-direction: row;
-      padding: 25px 0 17px;
-      justify-content: stretch;
+      display: grid;
+      grid-template-columns: 610px 244px;
+      column-gap: 40px;
+      padding: 15px 0 17px;
       min-width: 890px;
       align-items: center;
+      max-width: none;
     }
   }
 
@@ -123,7 +168,6 @@
 
     @media (min-width: @desktop-width) {
       margin-bottom: 0;
-      margin-right: 40px;
     }
   }
 
@@ -137,6 +181,10 @@
       font-size: 16px;
       line-height: 20px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 0;
+    }
     color: @special_dark-grey;
   }
 
@@ -144,6 +192,9 @@
     margin-right: 0;
   }
 
+  &__button {
+    padding: 10px 26px;
+  }
   &__special {
     display: flex;
     align-items: flex-end;
