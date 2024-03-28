@@ -74,6 +74,7 @@
 .main-navigation {
   display: flex;
   position: relative;
+  z-index: 1;
   &__toggle {
     position: absolute;
     padding: 0;
@@ -179,8 +180,10 @@
 
     @media (min-width: @desktop-width) {
       padding: 0;
-      color: @basic_white;
+
     }
+
+
 
     &:hover {
       @media (max-width: @desktop-width) {
@@ -219,6 +222,12 @@
           background-color: @basic_white;
         }
       }
+    }
+  }
+
+  &__link--index {
+    @media (min-width: @desktop-width) {
+    color: @basic_white;
     }
   }
 }

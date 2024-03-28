@@ -6,39 +6,45 @@
     align-items: center;
     margin: 0;
     padding: 27px 0 0;
-
-    @media (min-width: @tablet-width) {
-      padding: 0;
-      padding-top: 65px;
-    }
-
     font-family: "Oswald", sans-serif;
     font-size: 14px;
     line-height: 14px;
 
     @media (min-width: @tablet-width) {
+      min-height: 875px;
+      background-image: none;
       font-size: 20px;
       line-height: 20px;
+      padding: 0;
+      padding-top: 65px;
+      align-items: flex-start;
+      color: @basic_black;
+      box-sizing: border-box;
     }
+
     background-color: @basic_white;
     color: @basic_white;
     background-image: url("../../img/hiro-background.png");
     background-repeat: no-repeat;
     background-size: 280px 270px;
 
-    @media (min-width: @tablet-width) {
-      align-items: flex-start;
-      color: @basic_black;
-    }
-
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      background-image: none;
-    }
-
     @media (min-width: @desktop-width) {
+      padding-top: 29px;
+      padding-bottom: 52px;
+      min-height: 580px;
+    }
+  }
+
+  &__wrapper::before {
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      content: "";
+      width: 720px;
+      height: 694px;
       background-image: url("../../img/hiro-background-desktop.png");
-      background-repeat: no-repeat;
-      background-size: 720px 694px;
+      top: -160px;
+      right: -110px;
+      z-index: 0;
     }
   }
 
@@ -50,12 +56,17 @@
     line-height: 36px;
     font-weight: normal;
     text-align: center;
+    z-index: 1;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 40px;
       text-align: start;
       font-size: 60px;
       line-height: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 81px;
     }
   }
 
@@ -64,10 +75,15 @@
     margin-bottom: 29px;
     text-transform: uppercase;
     text-align: center;
+    z-index: 1;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 21px;
+      margin-bottom: 50px;
       text-align: start;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 52px;
     }
   }
 
@@ -80,18 +96,24 @@
     text-align: center;
 
     @media (min-width: @tablet-width) {
+      position: absolute;
       margin-bottom: 0;
       width: 709px;
       height: 609px;
       z-index: 0;
+      bottom: 0;
+      right: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 52px;
+      right: 110px;
+      bottom: -69px;
     }
   }
   &__button {
     @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 290px;
-    order: 2;
-    z-index: 1;
+      z-index: 1;
+    }
   }
-}
 }
