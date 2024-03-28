@@ -71,19 +71,22 @@
             <ul class="form__solution-list form-list">
               <li class="form__solution-item form-item">
                 <label class="form__select">
-                  <input class="form__input" type="radio" name="slim" value="none" checked>
+                  <input class="form__input visually-hidden" type="radio" name="slim" value="none" checked>
+                  <span class="form__mark"></span>
                   <span>Похудение</span>
                 </label>
               </li>
               <li class="form__solution-item form-item">
                 <label class="form__select">
-                  <input class="form__input" type="radio" name="pro" value="none">
+                  <input class="form__input visually-hidden" type="radio" name="pro" value="none">
+                  <span class="form__mark"></span>
                   <span>Набор массы</span>
                 </label>
               </li>
               <li class="form__solution-item form-item">
                 <label class="form__select">
-                  <input class="form__input" type="radio" name="advise" value="none">
+                  <input class="form__input visually-hidden" type="radio" name="advise" value="none">
+                  <span class="form__mark"></span>
                   <span>Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
@@ -114,8 +117,9 @@
           <p class="form__comment-text">
             <label class="form__label" for="comment-text">
             </label>
-            <input class="form__field" type="text" id="comment-text" name="comment-text"
-              placeholder="Расскажите обо всех повАдках кота">
+            <!-- <input class="form__field form__comment-content" type="text" id="comment-text" name="comment-text"
+              placeholder="Расскажите обо всех повАдках кота"> -->
+              <textarea class="form__field form__comment-content" id="comment-text" name="comment-text">Расскажите обо всех повАдках кота</textarea>
           </p>
         </div>
         <fieldset class="form__additional">
@@ -124,25 +128,29 @@
           <ul class="form__additional-list form-list">
             <li class="form__additional-item form-item">
               <label class="form__select">
-                <input class="form__input" type="checkbox" name="sugar" value="none" checked>
+                <input class="form__input visually-hidden" type="checkbox" name="sugar" value="none" checked>
+                <span class="form__mark" ></span>
                 <span>Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__additional-item form-item">
               <label class="form__select">
-                <input class="form__input" type="checkbox" name="water" value="none">
+                <input class="form__input visually-hidden" type="checkbox" name="water" value="none">
+                <span class="form__mark" ></span>
                 <span>питьевая вода</span>
               </label>
             </li>
             <li class="form__additional-item form-item">
               <label class="form__select">
-                <input class="form__input" type="checkbox" name="milk" value="none">
+                <input class="form__input visually-hidden" type="checkbox" name="milk" value="none">
+                <span class="form__mark" ></span>
                 <span>молоко</span>
               </label>
             </li>
             <li class="form__additional-item form-item">
               <label class="form__select">
-                <input class="form__input" type="checkbox" name="vitamins" value="none">
+                <input class="form__input visually-hidden" type="checkbox" name="vitamins" value="none">
+                <span class="form__mark" ></span>
                 <span>витамины</span>
               </label>
             </li>

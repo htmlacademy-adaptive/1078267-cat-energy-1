@@ -171,6 +171,7 @@
     font-size: 20px;
     line-height: 20px;
     cursor: pointer;
+    z-index: 2;
 
     @media (min-width: @tablet-width) and (max-width: @desktop-width) {
       padding: 0;
@@ -180,10 +181,7 @@
 
     @media (min-width: @desktop-width) {
       padding: 0;
-
     }
-
-
 
     &:hover {
       @media (max-width: @desktop-width) {
@@ -227,7 +225,7 @@
 
   &__link--index {
     @media (min-width: @desktop-width) {
-    color: @basic_white;
+      color: @basic_white;
     }
   }
 }

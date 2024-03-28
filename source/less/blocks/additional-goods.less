@@ -249,13 +249,16 @@
     left: 40px;
 
     @media (min-width: @tablet-width) {
-      position: absolute;
-      content: "";
       width: 80px;
       height: 83px;
       background-image: url("../../img/icon_gift.svg");
       bottom: -10px;
       left: -264px;
     }
+    @media (min-width: @desktop-width) {
+      bottom: 105px;
+      left: 41px;
+    }
+
   }
 }
