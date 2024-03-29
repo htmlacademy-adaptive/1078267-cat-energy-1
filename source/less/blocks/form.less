@@ -3,7 +3,7 @@
   padding: 27px 0 30px;
 
   @media (min-width: @tablet-width) {
-    padding: 65px 0 60px;
+    padding: 65px 40px 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -47,6 +47,7 @@
       margin-bottom: 66px;
       font-size: 20px;
       line-height: 30px;
+      max-width: 323px;
     }
   }
 
@@ -59,8 +60,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      flex-direction: row;
-      justify-content: flex-start;
+      display: grid;
+      grid-template-columns: repeat(2, 570px);
       gap: 80px;
       margin-bottom: 70px;
     }
@@ -73,6 +74,13 @@
     padding: 0 20px 21px;
     border-bottom: 1px solid @special_grey-3;
 
+    @media (min-width: @tablet-width) {
+      border-bottom: none;
+      margin: 0;
+      margin-bottom: 72px;
+      padding: 0;
+    }
+
     @media (min-width: @desktop-width) {
       margin-bottom: 0;
     }
@@ -83,6 +91,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
   &__text:last-child {
@@ -115,6 +127,7 @@
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 30px;
+      padding: 11px 20px;
     }
     color: @special_dark-grey;
     text-transform: uppercase;
@@ -125,11 +138,34 @@
     padding: 0 20px 16px;
     border: none;
     border-bottom: 1px solid @special_grey-3;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding: 23px 27px 27px;
+      border-bottom: none;
+      border: 1px solid @basic_grey-5;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 25px 28px;
+    }
+  }
+
+  &__solution-list {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__select {
     padding-left: 60px;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
 
   &__input[type="radio"] + &__mark {
@@ -141,6 +177,15 @@
     border: 1px solid @special_grey;
     border-radius: 50%;
     box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+     top: 0;
+    }
   }
 
   &__input[type="radio"]:checked + &__mark {
@@ -148,6 +193,10 @@
     background-size: 30px 30px;
     background-repeat: no-repeat;
     border: none;
+
+    @media (min-width: @tablet-width) {
+      background-size: 40px 40px;
+    }
   }
 
   &__input[type="checkbox"] + &__mark {
@@ -158,6 +207,12 @@
     height: 30px;
     border: 1px solid @special_grey;
     box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: 0;
+    }
   }
 
   &__input[type="checkbox"]:checked + &__mark {
@@ -165,6 +220,10 @@
     background-size: 30px 30px;
     background-repeat: no-repeat;
     border: none;
+
+    @media (min-width: @tablet-width) {
+      background-size: 40px 40px;
+    }
   }
 
   &__owner {
@@ -255,6 +314,12 @@
     box-sizing: border-box;
     padding-right: 14px;
     opacity: 0.85;
+
+    @media (min-width: @tablet-width) {
+      max-width: 100%;
+      min-height: 175px;
+      padding: 11px 20px;
+    }
   }
 
   &__additional {
@@ -264,7 +329,7 @@
     border: none;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 57px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: @desktop-width) {
@@ -288,6 +353,14 @@
     list-style-type: none;
   }
 
+  &__additional-list {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 221px);
+      column-gap: 123px;
+    }
+  }
+
   &-item {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
@@ -298,7 +371,14 @@
     @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 30px;
+      padding: 0;
+      margin-bottom: 32px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 13px;
+    }
+
     color: @special_dark-grey;
     text-transform: uppercase;
   }
@@ -313,11 +393,18 @@
 
     @media (min-width: @tablet-width) {
       flex-direction: row;
+      justify-content: space-between;
+      max-width: 518px;
     }
   }
 
   &__button {
     margin-bottom: 23px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 284px;
+      margin-bottom: 0;
+    }
   }
 
   &__legend {
