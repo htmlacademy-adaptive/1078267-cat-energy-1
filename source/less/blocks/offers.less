@@ -229,4 +229,30 @@
     background-image: url("../../img/offers-arrow.svg");
     background-repeat: no-repeat;
   }
+
+  &__link:hover::before {
+    background-image: url("../../img/offers-arrow-hover.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 2px;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+    }
+  }
+  &__link:active {
+    opacity: 0.3;
+  }
+
+  &__link:active::before {
+    background-image: url("../../img/offers-arrow-hover.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: 2px;
+    opacity: 0.3;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+    }
+  }
 }

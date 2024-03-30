@@ -126,9 +126,6 @@
   }
 
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     width: 140px;
 
     @media (min-width: @tablet-width) {
@@ -140,6 +137,34 @@
       width: 169px;
     }
   }
+
+  &__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: @tablet-width) {
+      padding: 4px 0;
+      border-top: 1px solid @special_grey;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 5px 0;
+    }
+
+  }
+
+  &__text-wrapper:last-child {
+
+    @media (min-width: @tablet-width) {
+      border-bottom: 1px solid @special_grey;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
 
   &__name {
     justify-self: start;
@@ -290,6 +315,12 @@
     text-decoration: none;
     border: none;
   }
+
+  &__button-all:hover,
+  &__button-all:active {
+    background-color: @basic_grey-3;
+  }
+
 
   &__text-all {
     font-family: "Oswald", sans-serif;

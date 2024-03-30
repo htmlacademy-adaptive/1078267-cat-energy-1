@@ -100,6 +100,12 @@
     }
   }
 
+  &__client &__text {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 20px;
+    }
+  }
+
   &__text:last-child {
     margin-bottom: 0;
   }
@@ -133,11 +139,33 @@
       padding: 11px 20px;
     }
     @media (min-width: @desktop-width) {
-      min-width: 494px;
+      justify-self: stretch;
     }
 
     color: @special_dark-grey;
     text-transform: uppercase;
+  }
+
+  &__field:hover {
+    border: 1px solid @special_grey;
+  }
+
+  &__field:focus-visible {
+    border: 1px solid @special_dark-grey;
+  }
+
+  &__field:invalid {
+    border: 1px solid @status_error;
+  }
+
+  &__field:active {
+    border: 1px solid @basic_grey-5;
+  }
+
+  &__client &__field {
+    @media (min-width: @desktop-width) {
+      justify-self: stretch;
+    }
   }
 
   &__solution {
@@ -203,6 +231,14 @@
     }
   }
 
+  &__input[type="radio"]:hover + &__mark {
+    border: 1px solid @special_grey-5;
+  }
+
+  &__input[type="radio"]:disabled + &__mark {
+    opacity: 0.3;
+  }
+
   &__input[type="radio"]:checked + &__mark {
     background-image: url("../../img/form-radio-checked.svg");
     background-size: 30px 30px;
@@ -212,6 +248,14 @@
     @media (min-width: @tablet-width) {
       background-size: 40px 40px;
     }
+  }
+
+  &__input[type="radio"]:checked:hover + &__mark {
+    background-image: url("../../img/form-radio-checked-hover.svg");
+  }
+
+  &__input[type="radio"]:checked:disabled + &__mark {
+    opacity: 0.3;
   }
 
   &__input[type="checkbox"] + &__mark {
@@ -229,15 +273,36 @@
     }
   }
 
+  &__input[type="checkbox"]:hover + &__mark {
+    border: 1px solid @special_grey-5;
+  }
+
+  &__input[type="checkbox"]:disabled + &__mark {
+    opacity: 0.3;
+  }
+
   &__input[type="checkbox"]:checked + &__mark {
-    background-image: url("../../img/form-checkbox-checked.svg");
-    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @special_grey;
+    background-image: url("../../img/tick.svg");
+    background-position: center;
     background-repeat: no-repeat;
-    border: none;
+
 
     @media (min-width: @tablet-width) {
-      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
     }
+  }
+
+  &__input[type="checkbox"]:checked:hover + &__mark {
+    border: 1px solid @special_grey-5;
+
+  }
+
+  &__input[type="checkbox"]:checked:disabled + &__mark {
+    opacity: 0.3;
   }
 
   &__owner {
@@ -252,6 +317,32 @@
     @media (min-width: @desktop-width) {
       margin-bottom: 70px;
     }
+  }
+
+  &__owner &__field {
+    position: relative;
+  }
+
+  &__owner &__field--email::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/email.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+  }
+
+  &__owner &__field--tel::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/phone.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
   }
 
   &__title {
@@ -331,8 +422,8 @@
     flex-direction: column;
 
     @media (min-width: @desktop-width) {
-      flex-direction: row;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 80px;
     }
   }
