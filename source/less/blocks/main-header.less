@@ -1,15 +1,18 @@
 .main-header {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 280px;
   min-height: 65px;
   margin: 0 auto;
-  padding: 13px 0 15px;
+  padding-top: 13px;
 
   @media (min-width: @tablet-width) {
     padding: 25px 34px 0 30px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,6 +36,14 @@
     font-size: 20px;
     line-height: 30px;
     width: 1220px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 190px;
+    margin-bottom: 15px;
   }
 
   &__logo {
@@ -122,8 +133,8 @@
       align-self: center;
       margin: 0 auto;
       position: absolute;
-      top: 30px;
-      right: -20px;
+      top: 0;
+      left: -20px;
       width: 320px;
       z-index: 10;
       background-color: @basic_white;
@@ -214,8 +225,8 @@
 .main-navigation--closed .main-navigation__toggle::before {
   position: absolute;
   content: "";
-  top: 2px;
-  left: 0;
+  top: -33px;
+  left: 280px;
   width: 24px;
   height: 2px;
   background-color: @basic_black;
@@ -235,15 +246,15 @@
 }
 
 .main-navigation--opened .main-navigation__toggle {
-  top: 0;
+  top: -33px;
+  left: 280px;
   right: auto;
-  left: 0;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 21px;
     width: 26px;
     height: 1.5px;
@@ -265,8 +276,17 @@
   }
 }
 
+.main-navigation--nojs .main-navigation__list {
+  @media (max-width: @mobile-width) {
+    position: static;
+    margin: 0 -20px;
+  }
+}
+
 .main-navigation--nojs .main-navigation__toggle {
   @media (max-width: @mobile-width) {
     display: none;
   }
 }
+
+
