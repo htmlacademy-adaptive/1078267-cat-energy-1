@@ -21,17 +21,17 @@
   }
 
   &::after {
-      @media (min-width: @desktop-width) {
-        position: absolute;
-        margin: 0 -110px;
-        content: "";
-        top: 136px;
-        width: 1440px;
-        height: 462px;
-        background-color: @basic_grey;
-        z-index: -1;
-      }
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      margin: 0 -110px;
+      content: "";
+      top: 136px;
+      width: 1440px;
+      height: 462px;
+      background-color: @basic_grey;
+      z-index: -1;
     }
+  }
 
   &__title {
     align-self: flex-start;
@@ -108,6 +108,7 @@
       margin-right: 160px;
       margin-bottom: 0;
     }
+
     @media (min-width: @desktop-width) {
       margin-bottom: 55px;
     }
@@ -119,6 +120,7 @@
     flex-direction: column;
     width: 124px;
     text-align: center;
+
     @media (min-width: @tablet-width) {
       width: 162px;
     }
@@ -138,6 +140,7 @@
       font-size: 30px;
       line-height: 37px;
     }
+
     color: @basic_black;
     text-transform: uppercase;
   }
@@ -168,10 +171,9 @@
     @media (min-width: @desktop-width) {
       background-color: @basic_grey;
     }
+
     color: @special_dark-grey;
   }
-
-
 
   &__text-wrapper {
     @media (min-width: @tablet-width) {
@@ -215,11 +217,12 @@
     position: relative;
 
     @media (max-width: @mobile-width) {
-    width: 280px;
-    height: 256px;
-    background-image: url("../../img/example-before-after.png");
-    background-size: cover;
-  }
+      width: 280px;
+      height: 256px;
+      background-image: url("../../img/example-before-after.png");
+      background-size: cover;
+    }
+
     @media (min-width: @tablet-width) {
       background-image: none;
     }
@@ -230,11 +233,10 @@
       height: 462px;
       background-color: @basic_grey-2;
     }
-
   }
 
   &__decoration::before {
-    @media (min-width: @tablet-width) and (max-width: 1439px)  {
+    @media (min-width: @tablet-width) and (max-width: 1439px) {
       position: absolute;
       content: "";
       width: 560px;
@@ -254,10 +256,6 @@
       top: -523px;
       background-image: url("../../img/example-before-after-tablet.png");
       background-repeat: no-repeat;
-
     }
   }
 }
-
-
-

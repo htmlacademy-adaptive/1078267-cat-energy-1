@@ -116,10 +116,12 @@
 
   &__image {
     grid-row: span 2;
+
     @media (min-width: @tablet-width) {
       margin-top: -81px;
       margin-bottom: 22px;
     }
+
     @media (min-width: @desktop-width) {
       margin-bottom: 12px;
     }
@@ -150,21 +152,17 @@
     @media (min-width: @desktop-width) {
       padding: 5px 0;
     }
-
   }
 
   &__text-wrapper:last-child {
-
     @media (min-width: @tablet-width) {
       border-bottom: 1px solid @special_grey;
+    }
 
+    @media (min-width: @desktop-width) {
+      padding-bottom: 10px;
+    }
   }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 10px;
-  }
-}
-
 
   &__name {
     justify-self: start;
@@ -202,6 +200,7 @@
       font-size: 16px;
       line-height: 20px;
     }
+
     color: @special_dark-grey;
   }
 
@@ -211,6 +210,7 @@
 
   &__button {
     position: static;
+
     @media (min-width: @tablet-width) {
       padding: 10px 50px;
     }
@@ -300,6 +300,7 @@
       line-height: 18px;
       margin-bottom: 82px;
     }
+
     color: @special_dark-grey;
   }
 
@@ -313,14 +314,12 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    border: none;
   }
 
   &__button-all:hover,
   &__button-all:active {
     background-color: @basic_grey-3;
   }
-
 
   &__text-all {
     font-family: "Oswald", sans-serif;
