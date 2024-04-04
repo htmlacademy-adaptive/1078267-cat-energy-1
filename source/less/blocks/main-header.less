@@ -196,20 +196,18 @@
     }
   }
 
+  &__link:hover {
+    color: fade(@basic_black, 60%);
+  }
+
+  &__link:active {
+    color: fade(@basic_black, 30%);
+  }
+
   &__link--index {
     @media (min-width: @desktop-width) {
       color: @basic_white;
     }
-  }
-
-  &__link:hover {
-    @media (max-width: @desktop-width) {
-      color: fade(@basic_black, 60%);
-    }
-  }
-
-  &__link:active {
-    border-bottom: 2px solid @basic_green;
   }
 
   &__link--index:hover {
@@ -220,10 +218,12 @@
 
   &__link--index:active {
     @media (min-width: @desktop-width) {
-      border-bottom: 2px solid @basic_white;
+      color: fade(@basic_white, 30%);
     }
   }
 }
+
+
 
 .main-navigation--closed .main-navigation__toggle::before {
   position: absolute;

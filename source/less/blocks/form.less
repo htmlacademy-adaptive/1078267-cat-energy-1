@@ -126,6 +126,19 @@
     text-transform: uppercase;
   }
 
+  &__field-wrapper {
+    position: relative;
+
+  }
+
+  &__field-image {
+    stroke: @basic_green;
+    position: absolute;
+    right: -20px;
+    top: 15px;
+  }
+
+
   &__field {
     width: 100%;
     font-family: "Oswald", sans-serif;
@@ -148,16 +161,20 @@
     text-transform: uppercase;
   }
 
+  &__field:invalid {
+    border: 1px solid @status_error;
+  }
+
   &__field:hover {
     border: 1px solid @special_grey;
   }
 
-  &__field:focus-visible {
+  &__field:focus {
     border: 1px solid @special_dark-grey;
   }
 
-  &__field:invalid {
-    border: 1px solid @status_error;
+  &__field:focus + &__field-image {
+    stroke: @basic_green;
   }
 
   &__field:active {
@@ -169,6 +186,8 @@
       justify-self: stretch;
     }
   }
+
+
 
   &__solution {
     margin: 0 -20px 29px;
@@ -318,21 +337,6 @@
     @media (min-width: @desktop-width) {
       margin-bottom: 70px;
     }
-  }
-
-  &__owner &__field {
-    position: relative;
-  }
-
-  &__owner &__field--email::before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url("../../img/email.svg");
-    background-repeat: no-repeat;
-    top: 0;
-    right: 0;
   }
 
   &__owner &__field--tel::before {
