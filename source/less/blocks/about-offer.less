@@ -1,10 +1,24 @@
 .about-offer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 280px;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 69px;
+    width: 1220px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    margin-bottom: 49px;
     padding: 0;
 
     @media (min-width: @tablet-width) and (max-width: @desktop-width) {

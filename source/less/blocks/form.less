@@ -137,7 +137,6 @@
     top: 15px;
   }
 
-
   &__field {
     width: 100%;
     font-family: "Oswald", sans-serif;
@@ -164,6 +163,10 @@
     border: 1px solid @status_error;
   }
 
+  &__field:invalid + &__field-image path {
+    stroke: @status_error;
+  }
+
   &__field:hover {
     border: 1px solid @special_grey;
   }
@@ -172,7 +175,7 @@
     border: 1px solid @special_dark-grey;
   }
 
-  &__field:focus + &__field-image {
+  &__field:focus + &__field-image path {
     stroke: @basic_green;
   }
 
