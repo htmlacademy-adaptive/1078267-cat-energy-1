@@ -1,7 +1,6 @@
 .goods {
-  margin: 0;
+  width: 100%;
   margin-bottom: 25px;
-  padding: 0;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
@@ -11,8 +10,26 @@
     margin-bottom: 76px;
   }
 
+  &__decoration {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 280px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 30px;
+      width: 708px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 110px;
+      width: 1220px;
+    }
+  }
+
   &__title {
-    margin: 27px 0 41px;
+    margin: 0;
+    margin-top: 27px;
+    margin-bottom: 41px;
     font-family: "Oswald", sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -21,24 +38,25 @@
     text-align: center;
 
     @media (min-width: @tablet-width) {
-      margin: 0;
       margin-top: 65px;
       margin-bottom: 165px;
+      width: 430px;
       font-size: 60px;
       line-height: 60px;
       text-align: left;
+      text-wrap: nowrap;
     }
 
     @media (min-width: @desktop-width) {
       margin-top: 74px;
+      margin-bottom: 165px;
     }
   }
 
   &__list {
+    padding: 0;
     display: grid;
     grid-template-rows: repeat(8, 1fr);
-    margin: 0;
-    padding: 0;
     list-style-type: none;
 
     @media (min-width: @tablet-width) {
