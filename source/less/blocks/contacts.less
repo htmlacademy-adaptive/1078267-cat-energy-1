@@ -1,8 +1,48 @@
 .contacts {
   display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 26px 20px;
+  flex-direction: column;
+  width: 100%;
+  background-color: @basic_grey;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding: 26px 20px 0;
+    width: 280px;
+
+    @media (min-width: @tablet-width) and (max-width: 1439px) {
+      padding: 60px 70px 0;
+      width: 628px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0;
+      width: 1220px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 26px;
+
+    @media (min-width: @tablet-width) and (max-width: 1439px) {
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      background-color: @basic_white;
+      top: 95px;
+      padding: 60px 80px;
+      justify-content: space-between;
+      width: 407px;
+      margin-bottom: 0;
+    }
+  }
 
   &__title {
     margin: 0;
@@ -12,9 +52,15 @@
     line-height: 20px;
 
     @media (min-width: @tablet-width) {
+      max-width: 163px;
       font-size: 20px;
       line-height: 26px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 87px;
+    }
+
     color: @basic_black-2;
     text-transform: uppercase;
   }
@@ -27,9 +73,41 @@
     line-height: 20px;
 
     @media (min-width: @tablet-width) {
+      max-width: 157px;
+      text-align: end;
       font-size: 16px;
       line-height: 20px;
+
+      @media (min-width: @desktop-width) {
+        text-align: start;
+      }
     }
+
     color: @special_dark-grey;
+  }
+
+  &__map {
+    display: block;
+    width: 320px;
+    height: 362px;
+    margin: 0 -20px;
+    background-image: url("../../img/contacts-map-mobile.jpg");
+    background-size: 320px 362px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 400px;
+      margin: 0 -70px;
+      background-image: url("../../img/contacts-map-tablet.jpg");
+      background-size: 768px 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1440px;
+      background-image: url("../../img/contacts-map-desktop.jpg");
+      background-size: 1440px 400px;
+      margin: 0 -110px;
+    }
   }
 }
