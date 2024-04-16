@@ -56,7 +56,7 @@
   &__list {
     padding: 0;
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 209px);
     list-style-type: none;
 
     @media (min-width: @tablet-width) {
@@ -119,7 +119,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
+
     margin: 0;
     margin-bottom: 17px;
     padding: 0;
@@ -132,9 +132,12 @@
     }
   }
 
-  &__image {
+  &__container picture {
     grid-row: span 2;
+    justify-self: flex-start;
+  }
 
+  &__image {
     @media (min-width: @tablet-width) {
       margin-top: -81px;
       margin-bottom: 22px;
