@@ -1,25 +1,30 @@
 .hero {
   width: 100%;
-  min-height: 300px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
+  min-height: 480px;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
   color: @basic_white;
 
   @media (max-width: @mobile-width) {
-    background: linear-gradient(
-        rgba(104, 183, 56, 0.9),
-        rgba(104, 183, 56, 0.9)
-      ),
-      url("../../img/hero-background-mobile.png") no-repeat;
-    background-size: 320px 302px;
-    background-position: center;
-    object-fit: cover;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: calc(100% - 210px);
+      background: linear-gradient(
+          rgba(104, 183, 56, 0.9),
+          rgba(104, 183, 56, 0.9)
+        ),
+        url("../../img/hero-background-mobile.png") no-repeat;
+      background-size: 320px 302px;
+      background-position: top;
+      object-fit: cover;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    height: 775px;
+    min-height: 875px;
+    box-sizing: border-box;
     background-color: transparent;
     margin-bottom: 0;
     background-image: none;
@@ -34,7 +39,7 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 82px;
     padding-top: 0;
-    height: 500px;
+    min-height: 534px;
 
     &::before {
       position: absolute;
@@ -55,7 +60,6 @@
 
   &__wrapper {
     width: 280px;
-    height: 100px;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -123,7 +127,6 @@
     }
   }
 
-
   &__image {
     margin: 0;
     padding: 0;
@@ -138,8 +141,8 @@
       width: 709px;
       height: 609px;
       z-index: 0;
-      top: 201px;
-      right: 70px;
+      top: 195px;
+      right: 100px;
     }
 
     @media (min-width: @desktop-width) {

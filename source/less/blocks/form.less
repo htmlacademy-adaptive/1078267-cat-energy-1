@@ -2,6 +2,7 @@
   width: 100%;
 
   &__title {
+    max-width: 260px;
     margin: 0;
     margin-bottom: 37px;
     padding: 0;
@@ -12,6 +13,7 @@
     color: @basic_black;
 
     @media (min-width: @tablet-width) {
+      max-width: 435px;
       margin-bottom: 55px;
       font-size: 60px;
       line-height: 60px;
@@ -119,11 +121,13 @@
   }
 
   &__label {
+    min-width: 39px;
+    max-width: 94px;
     margin-right: 13px;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
 
     @media (min-width: @tablet-width) {
       font-size: 20px;
@@ -134,13 +138,15 @@
   }
 
   &__field-wrapper {
+    width: 100%;
     position: relative;
+
   }
 
   &__field-image {
     stroke: @basic_green;
     position: absolute;
-    right: -20px;
+    right: 16px;
     top: 15px;
   }
 
@@ -151,6 +157,7 @@
     line-height: 18px;
     padding: 14px 15px 13px;
     border: 1px solid @basic_grey-5;
+    box-sizing: border-box;
 
     @media (min-width: @tablet-width) {
       font-size: 20px;
@@ -365,10 +372,12 @@
     font-size: 24px;
     line-height: 26px;
     color: @basic_black;
+    max-width: 187px;
 
     @media (min-width: @tablet-width) {
       font-size: 36px;
       line-height: 36px;
+      max-width: 515px;
     }
   }
 
@@ -618,6 +627,7 @@
 
     @media (min-width: @desktop-width) {
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
