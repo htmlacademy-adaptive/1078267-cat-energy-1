@@ -1,6 +1,7 @@
 .goods {
   width: 100%;
-  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1x solid @basic_grey;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
@@ -54,6 +55,7 @@
   }
 
   &__list {
+    margin: 0;
     padding: 0;
     display: grid;
     grid-template-rows: repeat(8, 1fr);
@@ -97,17 +99,12 @@
   }
 
   &__item:last-child {
-    margin: 0 -20px;
-    padding: 20px 20px 25px;
-    border-bottom: 1px solid @basic_grey-3;
-
+    padding: 20px 0 25px;
     @media (min-width: @tablet-width) {
       border-top: none;
       margin: 0;
       padding: 50px 37px 40px;
       background-color: inherit;
-      border: 2px solid @basic_grey;
-      box-sizing: border-box;
     }
 
     @media (min-width: @desktop-width) {
@@ -120,9 +117,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     padding: 0;
 
     @media (min-width: @tablet-width) {
@@ -256,6 +252,7 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
+    border: 2px solid @basic_grey;
     max-width: 324px;
   }
 
@@ -265,7 +262,7 @@
 
   .goods-show-more__button {
     position: relative;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
     padding: 0;
     align-self: center;
     display: block;
