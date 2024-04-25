@@ -96,6 +96,12 @@
     }
   }
 
+  &__decoration {
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
+  }
+
   &__item--leaf {
     @media (min-width: @tablet-width) {
       background-image: url("../../img/about-offer-1.png");
@@ -155,6 +161,10 @@
       width: 80px;
       height: 80px;
       top: 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -2px;
     }
   }
 

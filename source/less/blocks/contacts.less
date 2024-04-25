@@ -37,10 +37,11 @@
       position: absolute;
       background-color: @basic_white;
       top: 95px;
-      padding: 60px 80px;
-      justify-content: space-between;
-      width: 407px;
+      padding: 60px 73px 58px 80px;
+      width: 568px;
+      height: 200px;
       margin-bottom: 0;
+      box-sizing: border-box;
     }
   }
 
@@ -53,7 +54,7 @@
     line-height: 20px;
 
     @media (min-width: @tablet-width) {
-      margin-right: 308px;
+      margin-right: 305px;
       width: unset;
       max-width: 163px;
       font-size: 20px;
@@ -77,17 +78,24 @@
     line-height: 20px;
 
     @media (min-width: @tablet-width) {
-      min-width: 157px;
+      min-width: 167px;
       text-align: end;
       font-size: 16px;
       line-height: 20px;
 
       @media (min-width: @desktop-width) {
+        font-size: 17px;
         text-align: start;
       }
     }
 
     color: @special_dark-grey;
+  }
+
+  &__decoration {
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
   }
 
   &__map {
