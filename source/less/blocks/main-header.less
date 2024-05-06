@@ -159,26 +159,25 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
-
-    @media (max-width: @mobile-width) {
-      align-self: center;
-      margin: 0 auto;
-      position: absolute;
-      top: 12px;
-      left: -20px;
-      width: 320px;
-      z-index: 10;
-      background-color: @basic_white;
-    }
+    align-self: center;
+    position: absolute;
+    top: 12px;
+    left: -20px;
+    max-width: 320px;
+    z-index: 10;
+    background-color: @basic_white;
 
     @media (min-width: @tablet-width) {
+      margin: 0;
+      position: static;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: flex-start;
       max-width: 436px;
+      background-color: transparent;
     }
 
     @media (min-width: @desktop-width) {
@@ -188,16 +187,18 @@
   }
 
   &__item {
-    @media (max-width: @mobile-width) {
-      padding: 22px 75px 24px;
-      min-width: 170px;
-      text-align: center;
-      border-top: 1px solid @basic_grey-4;
-    }
+    padding: 22px 75px 24px;
+    min-width: 170px;
+    text-align: center;
+    border-top: 1px solid @basic_grey-4;
 
     @media (min-width: @tablet-width) {
       margin-right: 33px;
+      padding: 0;
       text-wrap: wrap;
+      border-top: unset;
+      min-width: unset;
+      text-align: left;
     }
 
     @media (min-width: @desktop-width) {
@@ -247,6 +248,10 @@
 
   &__link--index {
     letter-spacing: 0;
+
+    @media (min-width: @desktop-width) {
+      color: @basic_white;
+    }
   }
 
   &__link:hover {
@@ -255,12 +260,6 @@
 
   &__link:active {
     color: fade(@basic_black, 30%);
-  }
-
-  &__link--index {
-    @media (min-width: @desktop-width) {
-      color: @basic_white;
-    }
   }
 
   &__link--index:hover {

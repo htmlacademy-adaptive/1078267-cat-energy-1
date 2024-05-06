@@ -89,34 +89,29 @@
       }
     }
 
-    @media (max-width: @mobile-width) {
-      &--slim::before {
-        position: absolute;
-        content: "";
-        width: 50px;
-        height: 53px;
-        left: 0;
-        top: -10px;
-        background-image: url("../../img/sprite.svg#image-slim-mobile");
-        background-repeat: no-repeat;
-      }
-    }
+    &--slim::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 53px;
+      left: 0;
+      top: -10px;
+      background-image: url("../../img/sprite.svg#image-slim-mobile");
+      background-repeat: no-repeat;
 
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      &--slim::before {
+      @media (min-width: @tablet-width) and (max-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 200px;
         height: 211px;
         right: 1px;
+        left: unset;
         top: 4px;
         background-image: url("../../img/sprite.svg#image-slim-tablet");
         background-repeat: no-repeat;
       }
-    }
 
-    @media (min-width: @desktop-width) {
-      &--slim::before {
+      @media (min-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 100px;
@@ -142,34 +137,29 @@
       }
     }
 
-    @media (max-width: @mobile-width) {
-      &--pro::before {
-        position: absolute;
-        content: "";
-        width: 67px;
-        height: 50px;
-        left: -8px;
-        top: -8px;
-        background-image: url("../../img/sprite.svg#image-pro-mobile");
-        background-repeat: no-repeat;
-      }
-    }
+    &--pro::before {
+      position: absolute;
+      content: "";
+      width: 67px;
+      height: 50px;
+      left: -8px;
+      top: -8px;
+      background-image: url("../../img/sprite.svg#image-pro-mobile");
+      background-repeat: no-repeat;
 
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      &--pro::before {
+      @media (min-width: @tablet-width) and (max-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 268px;
         height: 200px;
         right: -1px;
+        left: unset;
         top: 14px;
         background-image: url("../../img/sprite.svg#image-pro-tablet");
         background-repeat: no-repeat;
       }
-    }
 
-    @media (min-width: @desktop-width) {
-      &--pro::before {
+      @media (min-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 134px;

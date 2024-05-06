@@ -38,8 +38,8 @@
       background-color: @basic_white;
       top: 95px;
       padding: 60px 73px 58px 80px;
-      width: 568px;
-      height: 200px;
+      width: 565px;
+      height: 199px;
       margin-bottom: 0;
       box-sizing: border-box;
     }
@@ -93,7 +93,9 @@
   }
 
   &__decoration {
-    display: none;
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
   }
 
   &__map {

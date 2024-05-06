@@ -54,7 +54,7 @@
     @media (min-width: @tablet-width) {
       margin-right: 120px;
       border-bottom: none;
-      padding: 8px 0 7px;
+      padding: 3px 0 8px;
     }
   }
 
@@ -147,6 +147,10 @@
 
   &__copyright-logo {
     fill: @special_grey-2;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 6px;
+    }
   }
 
   &__copyright:hover &__copyright-logo,
@@ -166,7 +170,8 @@
     align-self: center;
 
     @media (min-width: @tablet-width) {
-      margin-right: 20px;
+      margin-right: 23px;
+      margin-bottom: 6px;
     }
   }
 }

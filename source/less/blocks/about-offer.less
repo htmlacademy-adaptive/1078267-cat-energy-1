@@ -97,7 +97,9 @@
   }
 
   &__decoration {
-    display: none;
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
   }
 
   &__item--leaf {
