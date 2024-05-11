@@ -1,22 +1,24 @@
 .offers {
   margin: 0 auto;
   padding: 20px;
-  width: 280px;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
-    margin-bottom: 45px;
-    width: 708px;
+    margin-bottom: 35px;
+    max-width: 708px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 71px;
     padding: 0 110px;
-    width: 1220px;
+    max-width: 1220px;
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
     flex-direction: column;
     gap: 20px;
@@ -24,6 +26,7 @@
 
     @media (min-width: @desktop-width) {
       flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -33,21 +36,24 @@
     align-items: flex-start;
     padding: 20px;
     background-color: @basic_grey;
+    box-sizing: border-box;
 
     @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      padding: 77px 29px 53px 53px;
+      margin-bottom: 10px;
+      padding: 77px 29px 57px 53px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 77px 61px 55px 52px;
-      width: 570px;
+      padding: 77px 61px 59px 52px;
+      max-width: 570px;
     }
   }
 
   &__title {
     position: relative;
     margin: 0;
-    margin-bottom: 29px;
+    margin-top: 12px;
+    margin-bottom: 27px;
     padding: 0;
     font-family: "Oswald", sans-serif;
     font-size: 24px;
@@ -55,6 +61,7 @@
     font-weight: normal;
 
     @media (min-width: @tablet-width) {
+      margin: 0;
       align-self: flex-start;
       font-size: 36px;
       line-height: 36px;
@@ -71,72 +78,53 @@
     &--slim {
       padding-left: 70px;
 
-      @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+      @media (min-width: @tablet-width) and (max-width: 1439px) {
         padding-left: 0;
         padding-right: 428px;
       }
 
       @media (min-width: @desktop-width) {
         padding-left: 162px;
+        padding-right: 0;
       }
     }
 
-    @media (max-width: @mobile-width) {
-      &--slim::before {
-        position: absolute;
-        content: "";
-        width: 50px;
-        height: 53px;
-        left: 0;
-        top: 0;
-        background-image: url("../../img/image-slim-mobile.png");
-        background-repeat: no-repeat;
+    &--slim::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 53px;
+      left: 0;
+      top: -10px;
+      background-image: url("../../img/sprite.svg#image-slim-mobile");
+      background-repeat: no-repeat;
 
-        @media (min-resolution: 2dppx) {
-          background-image: url("../../img/image-slim-mobile@2x.png");
-          background-size: 50px 53px;
-        }
-      }
-    }
-
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      &--slim::before {
+      @media (min-width: @tablet-width) and (max-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 200px;
         height: 211px;
-        right: 0;
-        top: 0;
-        background-image: url("../../img/image-slim-tablet.png");
+        right: 1px;
+        left: unset;
+        top: 4px;
+        background-image: url("../../img/sprite.svg#image-slim-tablet");
         background-repeat: no-repeat;
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../../img/image-slim-tablet@2x.png");
-          background-size: 200px 211px;
-        }
       }
-    }
 
-    @media (min-width: @desktop-width) {
-      &--slim::before {
+      @media (min-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 100px;
         height: 106px;
         left: 0;
-        top: -40px;
-        background-image: url("../../img/image-slim-desktop.png");
+        top: -36px;
+        background-image: url("../../img/sprite.svg#image-slim-desktop");
         background-repeat: no-repeat;
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../../img/image-slim-desktop@2x.png");
-          background-size: 100px 106px;
-        }
       }
     }
 
     &--pro {
-      padding-left: 78px;
+      padding-left: 70px;
 
       @media (min-width: @tablet-width) and (max-width: @desktop-width) {
         padding-left: 0;
@@ -144,77 +132,59 @@
       }
 
       @media (min-width: @desktop-width) {
-        padding-left: 181px;
+        padding-left: 162px;
+        padding-right: 0;
       }
     }
 
-    @media (max-width: @mobile-width) {
-      &--pro::before {
-        position: absolute;
-        content: "";
-        width: 67px;
-        height: 50px;
-        left: 0;
-        top: 0;
-        background-image: url("../../img/image-pro-mobile.png");
-        background-repeat: no-repeat;
+    &--pro::before {
+      position: absolute;
+      content: "";
+      width: 67px;
+      height: 50px;
+      left: -8px;
+      top: -8px;
+      background-image: url("../../img/sprite.svg#image-pro-mobile");
+      background-repeat: no-repeat;
 
-        @media (min-resolution: 2dppx) {
-          background-image: url("../../img/image-pro-mobile@2x.png");
-          background-size: 67px 50px;
-        }
-      }
-    }
-
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      &--pro::before {
+      @media (min-width: @tablet-width) and (max-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 268px;
         height: 200px;
-        right: 0;
-        top: 0;
-        background-image: url("../../img/image-pro-tablet.png");
+        right: -1px;
+        left: unset;
+        top: 14px;
+        background-image: url("../../img/sprite.svg#image-pro-tablet");
         background-repeat: no-repeat;
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../../img/image-pro-tablet@2x.png");
-          background-size: 268px 200px;
-        }
       }
-    }
 
-    @media (min-width: @desktop-width) {
-      &--pro::before {
+      @media (min-width: @desktop-width) {
         position: absolute;
         content: "";
         width: 134px;
         height: 100px;
-        left: 0;
+        left: -19px;
         top: -30px;
-        background-image: url("../../img/image-pro-desktop.png");
+        background-image: url("../../img/sprite.svg#image-pro-desktop");
         background-repeat: no-repeat;
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../../img/image-pro-desktop@2x.png");
-          background-size: 134px 100px;
-        }
       }
     }
   }
 
   &__description {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 21px;
     padding: 0;
-    padding-bottom: 23px;
+    padding-bottom: 21px;
     font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 18px;
     border-bottom: 1px solid @special_grey-3;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 48px;
+      max-width: 340px;
+      margin-bottom: 52px;
       padding-bottom: 0;
       font-size: 16px;
       line-height: 24px;
@@ -222,14 +192,11 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 23px;
+      margin-bottom: 27px;
+      max-width: 457px;
     }
 
     color: @basic_black;
-
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-      padding-right: 287px;
-    }
   }
 
   &__link {
@@ -241,11 +208,17 @@
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 16px;
+    max-width: 139px;
 
     @media (min-width: @tablet-width) {
+      max-width: 165px;
       padding-right: 57px;
       font-size: 20px;
       line-height: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 168px;
     }
 
     color: @basic_black;

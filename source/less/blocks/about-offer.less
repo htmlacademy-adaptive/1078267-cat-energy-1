@@ -1,10 +1,12 @@
 .about-offer {
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px 20px;
   width: 280px;
-  margin-bottom: 49px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding: 0 30px;
     width: 708px;
   }
 
@@ -35,7 +37,7 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
     padding: 0;
     font-family: "Oswald", sans-serif;
     font-size: 36px;
@@ -57,14 +59,14 @@
 
     @media (max-width: @mobile-width) {
       grid-template-rows: repeat(4, 1fr);
-      row-gap: 20px;
+      row-gap: 26px;
     }
 
     @media (min-width: @tablet-width) and (max-width: 1439px) {
       grid-template-columns: (repeat(2, 1fr));
       grid-template-rows: (repeat(2, 1fr));
       align-items: start;
-      column-gap: 137px;
+      column-gap: 132px;
       row-gap: 37px;
     }
 
@@ -76,6 +78,7 @@
   }
 
   &__item {
+    max-width: 250px;
     position: relative;
     padding: 0;
     padding-left: 80px;
@@ -93,15 +96,21 @@
     }
   }
 
+  &__decoration {
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
+  }
+
   &__item--leaf {
     @media (min-width: @tablet-width) {
       background-image: url("../../img/about-offer-1.png");
       background-repeat: no-repeat;
-      background-position: right top 40px;
+      background-position: right 52px top 40px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/about-offer-1@2x.png");
-        background-size: 85px 280px;
+        background-size: 73px 229px;
       }
     }
   }
@@ -112,25 +121,15 @@
     width: 60px;
     height: 60px;
     left: 0;
-    top: 0;
-    background-image: url("../../img/about-offer-leaf-mobile.png");
+    top: -2px;
+    background-image: url("../../img/sprite.svg#about-offer-leaf-mobile");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-leaf-mobile@2x.png");
-      background-size: 60px 60px;
-    }
-
     @media (min-width: @tablet-width) {
-      background-image: url("../../img/about-offer-leaf.png");
+      background-image: url("../../img/sprite.svg#about-offer-leaf");
       width: 80px;
       height: 80px;
       top: 40px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/about-offer-leaf@2x.png");
-        background-size: 80px 80px;
-      }
     }
   }
 
@@ -138,11 +137,11 @@
     @media (min-width: @tablet-width) {
       background-image: url("../../img/about-offer-2.png");
       background-repeat: no-repeat;
-      background-position: right top 40px;
+      background-position: right 13px top 40px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/about-offer-2@2x.png");
-        background-size: 114px 230px;
+        background-size: 114px 228px;
       }
     }
   }
@@ -153,25 +152,19 @@
     width: 60px;
     height: 60px;
     left: 0;
-    top: 0;
-    background-image: url("../../img/about-offer-water-mobile.png");
+    top: -2px;
+    background-image: url("../../img/sprite.svg#about-offer-water-mobile");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-water-mobile@2x.png");
-      background-size: 60px 60px;
-    }
-
     @media (min-width: @tablet-width) {
-      background-image: url("../../img/about-offer-water.png");
+      background-image: url("../../img/sprite.svg#about-offer-water");
       width: 80px;
       height: 80px;
       top: 40px;
+    }
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/about-offer-water@2x.png");
-        background-size: 80px 80px;
-      }
+    @media (min-width: @desktop-width) {
+      left: -2px;
     }
   }
 
@@ -179,7 +172,7 @@
     @media (min-width: @tablet-width) {
       background-image: url("../../img/about-offer-3.png");
       background-repeat: no-repeat;
-      background-position: right top 40px;
+      background-position: right 13px top 40px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/about-offer-3@2x.png");
@@ -194,25 +187,15 @@
     width: 60px;
     height: 60px;
     left: 0;
-    top: 0;
-    background-image: url("../../img/about-offer-meal-mobile.png");
+    top: -2px;
+    background-image: url("../../img/sprite.svg#about-offer-meal-mobile");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-meal-mobile@2x.png");
-      background-size: 60px 60px;
-    }
-
     @media (min-width: @tablet-width) {
-      background-image: url("../../img/about-offer-meal.png");
+      background-image: url("../../img/sprite.svg#about-offer-meal");
       width: 80px;
       height: 80px;
       top: 40px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/about-offer-meal@2x.png");
-        background-size: 80px 80px;
-      }
     }
   }
 
@@ -220,11 +203,11 @@
     @media (min-width: @tablet-width) {
       background-image: url("../../img/about-offer-4.png");
       background-repeat: no-repeat;
-      background-position: right top 40px;
+      background-position: right 2px top 40px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/about-offer-4@2x.png");
-        background-size: 114px 230px;
+        background-size: 123px 228px;
       }
     }
   }
@@ -235,25 +218,15 @@
     width: 60px;
     height: 60px;
     left: 0;
-    top: 0;
-    background-image: url("../../img/about-offer-time-mobile.png");
+    top: -2px;
+    background-image: url("../../img/sprite.svg#about-offer-time-mobile");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-time-mobile@2x.png");
-      background-size: 60px 60px;
-    }
-
     @media (min-width: @tablet-width) {
-      background-image: url("../../img/about-offer-time.png");
+      background-image: url("../../img/sprite.svg#about-offer-time");
       width: 80px;
       height: 80px;
       top: 40px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/about-offer-time@2x.png");
-        background-size: 80px 80px;
-      }
     }
   }
 }

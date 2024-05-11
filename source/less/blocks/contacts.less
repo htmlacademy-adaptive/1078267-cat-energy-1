@@ -37,14 +37,16 @@
       position: absolute;
       background-color: @basic_white;
       top: 95px;
-      padding: 60px 80px;
-      justify-content: space-between;
-      width: 407px;
+      padding: 60px 73px 58px 80px;
+      width: 565px;
+      height: 199px;
       margin-bottom: 0;
+      box-sizing: border-box;
     }
   }
 
   &__title {
+    width: 140px;
     margin: 0;
     padding: 0;
     font-family: "Oswald", sans-serif;
@@ -52,6 +54,8 @@
     line-height: 20px;
 
     @media (min-width: @tablet-width) {
+      margin-right: 305px;
+      width: unset;
       max-width: 163px;
       font-size: 20px;
       line-height: 26px;
@@ -66,6 +70,7 @@
   }
 
   &__description {
+    width: 140px;
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
@@ -73,17 +78,24 @@
     line-height: 20px;
 
     @media (min-width: @tablet-width) {
-      max-width: 157px;
+      min-width: 167px;
       text-align: end;
       font-size: 16px;
       line-height: 20px;
 
       @media (min-width: @desktop-width) {
+        font-size: 17px;
         text-align: start;
       }
     }
 
     color: @special_dark-grey;
+  }
+
+  &__decoration {
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
   }
 
   &__map {
