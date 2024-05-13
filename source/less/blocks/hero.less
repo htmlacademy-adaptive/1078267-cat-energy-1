@@ -47,14 +47,25 @@
       width: 50%;
       height: calc(100% + 160px);
       background: linear-gradient(
-          rgba(104, 183, 56, 0.9),
-          rgba(104, 183, 56, 0.9)
-        ),
-        url("../../img/hero-background-desktop.png") no-repeat;
+        rgba(104, 183, 56, 0.9),
+        rgba(104, 183, 56, 0.9)
+      );
       background-position: left;
       top: -120px;
       right: 0;
       z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: calc(100% + 160px);
+      background: url("../../img/hero-background-desktop.png") no-repeat;
+      background-position: right;
+      top: -120px;
+      right: 0;
+      z-index: -2;
     }
   }
 
