@@ -10,270 +10,270 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 77px;
   }
+}
 
-  &__decoration {
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 280px;
+.goods__decoration {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
 
-    @media (min-width: @tablet-width) {
-      padding: 0 30px;
-      width: 708px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding: 0 110px;
-      width: 1220px;
-    }
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    width: 708px;
   }
 
-  &__title {
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    width: 1220px;
+  }
+}
+
+.goods__title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 41px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: @basic_black;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 61px;
+    margin-bottom: 164px;
+    width: 450px;
+    text-wrap: wrap;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 68px;
+    margin-bottom: 164px;
+  }
+}
+
+.goods__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 139px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 80px;
+    row-gap: 140px;
+  }
+}
+
+.goods__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -20px;
+  padding: 20px 20px 25px;
+  border-top: 1px solid @basic_grey-3;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding: 0 37px 40px;
+    background-color: @basic_grey;
     margin: 0;
-    margin-top: 27px;
-    margin-bottom: 41px;
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: normal;
-    color: @basic_black;
-    text-align: start;
-
-    @media (min-width: @tablet-width) {
-      margin-top: 61px;
-      margin-bottom: 164px;
-      width: 450px;
-      text-wrap: wrap;
-      font-size: 60px;
-      line-height: 60px;
-      text-align: left;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-top: 68px;
-      margin-bottom: 164px;
-    }
   }
 
-  &__list {
+  @media (min-width: @desktop-width) {
+    max-width: 245px;
+    padding: 40px 38px;
+  }
+}
+
+.goods__item:last-child {
+  padding: 19px 0 25px;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
     margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    list-style-type: none;
-
-    @media (min-width: @tablet-width) {
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 60px;
-      row-gap: 139px;
-    }
-
-    @media (min-width: @desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      column-gap: 80px;
-      row-gap: 140px;
-    }
+    padding: 50px 37px 40px;
+    background-color: inherit;
   }
 
-  &__item {
+  @media (min-width: @desktop-width) {
+    padding: 40px 38px;
+  }
+}
+
+.goods__container {
+  max-width: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
     display: flex;
     flex-direction: column;
-    margin: 0 -20px;
-    padding: 20px 20px 25px;
-    border-top: 1px solid @basic_grey-3;
-    box-sizing: border-box;
-
-    @media (min-width: @tablet-width) {
-      border-top: none;
-      padding: 0 37px 40px;
-      background-color: @basic_grey;
-      margin: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      max-width: 245px;
-      padding: 40px 38px;
-    }
+    align-items: center;
+    margin-bottom: 33px;
   }
 
-  &__item:last-child {
-    padding: 19px 0 25px;
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      border-top: none;
-      margin: 0;
-      padding: 50px 37px 40px;
-      background-color: inherit;
-    }
+.goods__container--1000 {
+  margin-bottom: 13px;
 
-    @media (min-width: @desktop-width) {
-      padding: 40px 38px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
   }
 
-  &__container {
-    max-width: 280px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 0;
-    margin-bottom: 8px;
-    padding: 0;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      max-width: 708px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 33px;
-    }
+.goods__container picture {
+  grid-row: span 2;
+  justify-self: center;
+  margin-top: 8px;
+  min-height: 107px;
 
-    @media (min-width: @desktop-width) {
-      max-width: 1220px;
-    }
+  @media (min-width: @tablet-width) {
+    min-height: 210px;
+    margin-top: -52px;
+    margin-bottom: 3px;
   }
 
-  &__container--1000 {
-    margin-bottom: 13px;
+  @media (min-width: @desktop-width) {
+    margin-top: -92px;
+    margin-bottom: -7px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 34px;
-    }
+.goods__container--1000 picture {
+  margin-top: 3px;
 
-    @media (min-width: @desktop-width) {
-      margin-bottom: 30px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-top: -69px;
+    margin-bottom: 20px;
   }
 
-  &__container picture {
-    grid-row: span 2;
+  @media (min-width: @desktop-width) {
+    margin-top: -110px;
+    margin-bottom: 10px;
+  }
+}
+
+.goods__wrapper {
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    row-gap: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
+}
+
+.goods__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 140px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 250px;
+    padding: 4px 0;
+    border-top: 1px solid @special_grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 5px 0;
+  }
+}
+
+.goods__text-wrapper:last-child {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @special_grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.goods__name {
+  justify-self: start;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  max-width: 76px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
     justify-self: center;
-    margin-top: 8px;
-    min-height: 107px;
-
-    @media (min-width: @tablet-width) {
-      min-height: 210px;
-      margin-top: -52px;
-      margin-bottom: 3px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-top: -92px;
-      margin-bottom: -7px;
-    }
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 135px;
+    text-align: center;
   }
 
-  &__container--1000 picture {
-    margin-top: 3px;
-
-    @media (min-width: @tablet-width) {
-      margin-top: -69px;
-      margin-bottom: 20px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-top: -110px;
-      margin-bottom: 10px;
-    }
-  }
-
-  &__wrapper {
-    width: 140px;
-
-    @media (min-width: @tablet-width) {
-      width: 250px;
-      row-gap: 10px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 169px;
-    }
-  }
-
-  &__text-wrapper {
-    display: flex;
-    justify-content: space-between;
+  @media (min-width: @desktop-width) {
     max-width: 140px;
-
-    @media (min-width: @tablet-width) {
-      max-width: 250px;
-      padding: 4px 0;
-      border-top: 1px solid @special_grey;
-    }
-
-    @media (min-width: @tablet-width) {
-      padding: 5px 0;
-    }
+    margin-bottom: 20px;
   }
 
-  &__text-wrapper:last-child {
-    @media (min-width: @tablet-width) {
-      border-bottom: 1px solid @special_grey;
-    }
+  color: @special_dark-grey-2;
+  text-transform: uppercase;
+}
 
-    @media (min-width: @desktop-width) {
-      padding-bottom: 10px;
-    }
-  }
+.goods__text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
 
-  &__name {
-    justify-self: start;
-    margin: 0;
-    margin-bottom: 14px;
-    padding: 0;
-    max-width: 76px;
-    font-family: "Oswald", sans-serif;
+  @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-
-    @media (min-width: @tablet-width) {
-      justify-self: center;
-      margin-bottom: 15px;
-      font-size: 20px;
-      line-height: 24px;
-      max-width: 135px;
-      text-align: center;
-    }
-
-    @media (min-width: @desktop-width) {
-      max-width: 140px;
-      margin-bottom: 20px;
-    }
-
-    color: @special_dark-grey-2;
-    text-transform: uppercase;
   }
 
-  &__text {
-    font-family: "Lato", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+  color: @special_dark-grey;
+}
 
-    @media (min-width: @tablet-width) {
-      font-size: 16px;
-      line-height: 20px;
-    }
+.goods__text--value {
+  text-align: start;
+}
 
-    color: @special_dark-grey;
+.goods__button {
+  position: static;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 50px;
   }
 
-  &__text--value {
-    text-align: start;
-  }
-
-  &__button {
-    position: static;
-
-    @media (min-width: @tablet-width) {
-      font-size: 16px;
-      line-height: 20px;
-      padding: 10px 50px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-bottom: 0;
-    }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -293,128 +293,128 @@
   @media (min-width: @desktop-width) {
     max-width: 245px;
   }
+}
 
-  .goods-show-more__button {
-    position: relative;
-    margin-bottom: 28px;
-    padding: 0;
-    align-self: center;
-    display: block;
+.goods-show-more__button {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 0;
+  align-self: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: inherit;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
     width: 30px;
-    height: 30px;
-    border: none;
-    background-color: inherit;
+    height: 2px;
+    background-color: @special_grey-4;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 51px;
+      top: 30px;
       width: 60px;
-      height: 60px;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 15px;
-      right: 0;
-      width: 30px;
       height: 2px;
-      background-color: @special_grey-4;
-
-      @media (min-width: @tablet-width) {
-        top: 30px;
-        width: 60px;
-        height: 2px;
-      }
-
-      @media (min-width: @desktop-width) {
-        top: 39px;
-      }
     }
 
-    &::before {
-      transform: rotate(90deg);
-      box-shadow: none;
+    @media (min-width: @desktop-width) {
+      top: 39px;
     }
   }
 
-  &__title {
-    margin: 0;
-    margin-bottom: 8px;
-    padding: 0;
-    font-family: "Oswald", sans-serif;
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
+}
+
+.goods-show-more__title {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 135px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
+    max-width: 134px;
+  }
+
+  color: @basic_black-2;
+  text-transform: uppercase;
+}
+
+.goods-show-more__description {
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 170px;
     font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: @tablet-width) {
-      max-width: 135px;
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 23px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-bottom: 26px;
-      max-width: 134px;
-    }
-
-    color: @basic_black-2;
-    text-transform: uppercase;
+    line-height: 18px;
+    margin-bottom: 82px;
   }
 
-  &__description {
-    margin: 0;
-    margin-bottom: 21px;
-    padding: 0;
-    font-family: "Lato", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-
-    @media (min-width: @tablet-width) {
-      max-width: 170px;
-      font-size: 16px;
-      line-height: 18px;
-      margin-bottom: 82px;
-    }
-
-    @media (min-width: @desktop-width) {
-      max-width: 170px;
-      font-size: 16px;
-      line-height: 18px;
-      margin-bottom: 89px;
-    }
-
-    color: @special_dark-grey;
-  }
-
-  &__button-all {
-    align-self: stretch;
-    background-color: @basic_grey;
-    border: none;
-    margin: 0;
-    padding: 10px 63.5px;
-    max-width: 280px;
-    text-wrap: wrap;
-    cursor: pointer;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    @media (min-width: @desktop-width) {
-      padding: 10px 37px;
-    }
-  }
-
-  &__button-all:hover,
-  &__button-all:active {
-    background-color: @basic_grey-3;
-  }
-
-  &__text-all {
-    font-family: "Oswald", sans-serif;
+  @media (min-width: @desktop-width) {
+    max-width: 170px;
     font-size: 16px;
-    line-height: 20px;
-    color: @special_dark-grey;
-    text-transform: uppercase;
+    line-height: 18px;
+    margin-bottom: 89px;
   }
+
+  color: @special_dark-grey;
+}
+
+.goods-show-more__button-all {
+  align-self: stretch;
+  background-color: @basic_grey;
+  border: none;
+  margin: 0;
+  padding: 10px 63.5px;
+  max-width: 280px;
+  text-wrap: wrap;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 37px;
+  }
+}
+
+.goods-show-more__button-all:hover,
+.goods-show-more__button-all:active {
+  background-color: @basic_grey-3;
+}
+
+.goods-show-more__text-all {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: @special_dark-grey;
+  text-transform: uppercase;
 }
