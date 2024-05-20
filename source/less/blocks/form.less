@@ -61,7 +61,7 @@
   }
 }
 
-.form__conteiner {
+.form__container {
   display: flex;
   flex-direction: column;
 
@@ -301,17 +301,17 @@
 
 .form__input[type="radio"]:checked + .form__mark {
   background-image: url("../../img/form-radio-checked.svg");
-  background-size: 30px 30px;
+  background-size: 13px 13px;
   background-repeat: no-repeat;
-  border: none;
+  background-position: center;
 
   @media (min-width: @tablet-width) {
-    background-size: 40px 40px;
+    background-size: 18px 18px;
   }
 }
 
 .form__input[type="radio"]:checked:hover + .form__mark {
-  background-image: url("../../img/form-radio-checked-hover.svg");
+  border: 1px solid @special_grey-5;
 }
 
 .form__input[type="radio"]:checked:focus + .form__mark {
@@ -620,6 +620,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 325px);
     column-gap: 0;
+    row-gap: 10px;
   }
 }
 
