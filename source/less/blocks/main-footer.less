@@ -10,21 +10,22 @@
 
 .main-footer__wrapper {
   margin: 0 auto;
-  width: 280px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 708px;
+    width: 768px;
     padding: 53px 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1440px;
     padding: 64px 110px;
   }
 }
@@ -87,7 +88,7 @@
 }
 
 .main-footer__social-media-link--vk {
-  mask-image: url("../../img/sprite.svg#vk");
+  mask-image: url("../img/sprite.svg#vk");
   background-color: @special_grey-2;
   mask-size: 28px 22px;
   mask-repeat: no-repeat;
@@ -95,7 +96,7 @@
 }
 
 .main-footer__social-media-link--youtube {
-  mask-image: url("../../img/sprite.svg#youtube");
+  mask-image: url("../img/sprite.svg#youtube");
   background-color: @special_grey-2;
   mask-size: 28px 22px;
   mask-repeat: no-repeat;
@@ -103,7 +104,7 @@
 }
 
 .main-footer__social-media-link--telegram {
-  mask-image: url("../../img/sprite.svg#telegram");
+  mask-image: url("../img/sprite.svg#telegram");
   background-color: @special_grey-2;
   mask-size: 28px 22px;
   mask-repeat: no-repeat;

@@ -13,21 +13,19 @@
         rgba(104, 183, 56, 0.9),
         rgba(104, 183, 56, 0.9)
       ),
-      url("../../img/hero-background-mobile.png") no-repeat;
+      url("../img/hero-background-mobile.png") no-repeat;
     background-size: 320px 302px;
     background-position: top;
     object-fit: cover;
   }
 
   @media (min-width: @tablet-width) {
-    min-height: 870px;
-    box-sizing: border-box;
+    min-height: 811px;
     margin-bottom: 0;
     font-size: 20px;
     line-height: 20px;
     padding: 0;
     padding-top: 60px;
-    align-items: flex-start;
     color: @basic_black;
 
     &::before {
@@ -61,7 +59,7 @@
       content: "";
       width: 50%;
       height: calc(100% + 160px);
-      background: url("../../img/hero-background.png") no-repeat;
+      background: url("../img/hero-background.png") no-repeat;
       background-position: right;
       top: -120px;
       right: 0;
@@ -71,7 +69,7 @@
 }
 
 .hero__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -81,18 +79,19 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
     margin: 0 auto;
-    width: 709px;
+    width: 768px;
     padding: 0;
-    padding-left: 180px;
+    padding-left: 120px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding-left: 160px;
+    width: 1440px;
+    padding-left: 190px;
   }
 }
 
@@ -161,12 +160,12 @@
     height: 609px;
     z-index: 0;
     top: 201px;
-    right: 90px;
+    right: 29px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
-    left: 527px;
+    left: 557px;
     top: 23px;
     width: 552px;
     height: 499px;
