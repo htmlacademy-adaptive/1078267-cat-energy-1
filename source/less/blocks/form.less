@@ -24,16 +24,17 @@
 .nutrition__wrapper {
   margin: 0 auto;
   padding: 27px 20px 32px;
-  width: 280px;
+  width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding: 61px 70px;
-    width: 628px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 68px 110px 79px;
-    width: 1220px;
+    width: 1440px;
   }
 }
 
@@ -300,7 +301,7 @@
 }
 
 .form__input[type="radio"]:checked + .form__mark {
-  background-image: url("../../img/form-radio-checked.svg");
+  background-image: url("../img/form-radio-checked.svg");
   background-size: 13px 13px;
   background-repeat: no-repeat;
   background-position: center;
@@ -354,7 +355,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid @special_grey;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 
@@ -395,7 +396,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("../../img/phone.svg");
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   top: 0;
   right: 0;

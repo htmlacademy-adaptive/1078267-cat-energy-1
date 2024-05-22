@@ -1,18 +1,20 @@
 .about-offer {
   margin: 0 auto;
   padding: 0 20px 20px;
-  width: 280px;
+  width: 320px;
   margin-bottom: 33px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     padding: 0 30px;
-    width: 708px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 69px;
-    width: 1220px;
+    padding: 0 110px;
+    width: 1440px;
   }
 }
 
@@ -64,6 +66,7 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: 1439px) {
+    width: 633px;
     grid-template-columns: (repeat(2, 1fr));
     grid-template-rows: (repeat(2, 1fr));
     align-items: start;
@@ -74,12 +77,13 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: (repeat(4, 1fr));
     align-items: start;
-    column-gap: 80px;
+    column-gap: 79px;
+    width: 1220px;
   }
 }
 
 .about-offer__item {
-  max-width: 250px;
+  width: 280px;
   position: relative;
   padding: 0;
   padding-left: 80px;
@@ -87,13 +91,19 @@
   font-size: 14px;
   line-height: 18px;
   color: @basic_black;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    width: 249px;
     padding: 0;
     padding-top: 151px;
     padding-bottom: 57px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: unset;
   }
 }
 
@@ -105,12 +115,12 @@
 
 .about-offer__item--leaf {
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/about-offer-1.png");
+    background-image: url("../img/about-offer-1.png");
     background-repeat: no-repeat;
     background-position: right 52px top 40px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-1@2x.png");
+      background-image: url("../img/about-offer-1@2x.png");
       background-size: 73px 229px;
     }
   }
@@ -123,11 +133,11 @@
   height: 60px;
   left: 0;
   top: -2px;
-  background-image: url("../../img/sprite.svg#about-offer-leaf-mobile");
+  background-image: url("../img/sprite.svg#about-offer-leaf-mobile");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/sprite.svg#about-offer-leaf");
+    background-image: url("../img/sprite.svg#about-offer-leaf");
     width: 80px;
     height: 80px;
     top: 40px;
@@ -136,12 +146,12 @@
 
 .about-offer__item--water {
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/about-offer-2.png");
+    background-image: url("../img/about-offer-2.png");
     background-repeat: no-repeat;
     background-position: right 13px top 40px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-2@2x.png");
+      background-image: url("../img/about-offer-2@2x.png");
       background-size: 114px 228px;
     }
   }
@@ -154,11 +164,11 @@
   height: 60px;
   left: 0;
   top: -2px;
-  background-image: url("../../img/sprite.svg#about-offer-water-mobile");
+  background-image: url("../img/sprite.svg#about-offer-water-mobile");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/sprite.svg#about-offer-water");
+    background-image: url("../img/sprite.svg#about-offer-water");
     width: 80px;
     height: 80px;
     top: 40px;
@@ -171,12 +181,12 @@
 
 .about-offer__item--meal {
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/about-offer-3.png");
+    background-image: url("../img/about-offer-3.png");
     background-repeat: no-repeat;
     background-position: right 13px top 40px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-3@2x.png");
+      background-image: url("../img/about-offer-3@2x.png");
       background-size: 114px 230px;
     }
   }
@@ -189,11 +199,11 @@
   height: 60px;
   left: 0;
   top: -2px;
-  background-image: url("../../img/sprite.svg#about-offer-meal-mobile");
+  background-image: url("../img/sprite.svg#about-offer-meal-mobile");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/sprite.svg#about-offer-meal");
+    background-image: url("../img/sprite.svg#about-offer-meal");
     width: 80px;
     height: 80px;
     top: 40px;
@@ -202,12 +212,12 @@
 
 .about-offer__item--time {
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/about-offer-4.png");
+    background-image: url("../img/about-offer-4.png");
     background-repeat: no-repeat;
     background-position: right 2px top 40px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/about-offer-4@2x.png");
+      background-image: url("../img/about-offer-4@2x.png");
       background-size: 123px 228px;
     }
   }
@@ -220,11 +230,11 @@
   height: 60px;
   left: 0;
   top: -2px;
-  background-image: url("../../img/sprite.svg#about-offer-time-mobile");
+  background-image: url("../img/sprite.svg#about-offer-time-mobile");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/sprite.svg#about-offer-time");
+    background-image: url("../img/sprite.svg#about-offer-time");
     width: 80px;
     height: 80px;
     top: 40px;

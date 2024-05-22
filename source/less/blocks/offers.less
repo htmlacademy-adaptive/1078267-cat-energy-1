@@ -1,18 +1,19 @@
 .offers {
   margin: 0 auto;
   padding: 20px;
-  max-width: 280px;
+  width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
     margin-bottom: 35px;
-    max-width: 708px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 61px;
     padding: 0 110px;
-    max-width: 1220px;
+    width: 1440px;
   }
 }
 
@@ -28,6 +29,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    gap: 80px;
   }
 }
 
@@ -35,26 +37,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 280px;
   padding: 20px;
   background-color: @basic_grey;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 708px;
     margin-bottom: 10px;
     padding: 77px 29px 57px 53px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 77px 61px 59px 52px;
-    max-width: 570px;
+    width: 570px;
   }
 }
 
 .offers__title {
   position: relative;
   margin: 0;
-  margin-top: 12px;
-  margin-bottom: 27px;
+  margin-top: 10px;
+  margin-bottom: 29px;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -98,7 +102,7 @@
   height: 53px;
   left: 0;
   top: -10px;
-  background-image: url("../../img/sprite.svg#image-slim-mobile");
+  background-image: url("../img/sprite.svg#image-slim-mobile");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -109,7 +113,7 @@
     right: 1px;
     left: unset;
     top: 4px;
-    background-image: url("../../img/sprite.svg#image-slim-tablet");
+    background-image: url("../img/sprite.svg#image-slim-tablet");
     background-repeat: no-repeat;
   }
 
@@ -120,7 +124,7 @@
     height: 106px;
     left: 0;
     top: -36px;
-    background-image: url("../../img/sprite.svg#image-slim-desktop");
+    background-image: url("../img/sprite.svg#image-slim-desktop");
     background-repeat: no-repeat;
   }
 }
@@ -146,7 +150,7 @@
   height: 50px;
   left: -8px;
   top: -8px;
-  background-image: url("../../img/sprite.svg#image-pro-mobile");
+  background-image: url("../img/sprite.svg#image-pro-mobile");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -157,7 +161,7 @@
     right: -1px;
     left: unset;
     top: 14px;
-    background-image: url("../../img/sprite.svg#image-pro-tablet");
+    background-image: url("../img/sprite.svg#image-pro-tablet");
     background-repeat: no-repeat;
   }
 
@@ -168,7 +172,7 @@
     height: 100px;
     left: -19px;
     top: -30px;
-    background-image: url("../../img/sprite.svg#image-pro-desktop");
+    background-image: url("../img/sprite.svg#image-pro-desktop");
     background-repeat: no-repeat;
   }
 }
@@ -182,9 +186,10 @@
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid @special_grey-3;
+  color: @basic_black;
 
   @media (min-width: @tablet-width) {
-    max-width: 340px;
+    width: 340px;
     margin-bottom: 52px;
     padding-bottom: 0;
     font-size: 16px;
@@ -194,10 +199,8 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 27px;
-    max-width: 457px;
+    width: 457px;
   }
-
-  color: @basic_black;
 }
 
 .offers__link {
@@ -209,17 +212,18 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  max-width: 139px;
+  width: 139px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    max-width: 165px;
+    width: 165px;
     padding-right: 57px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 168px;
+    width: 168px;
   }
 
   color: @basic_black;
@@ -232,19 +236,19 @@
   content: "";
   width: 32px;
   height: 10px;
-  right: 0;
-  top: 2px;
+  right: 5px;
+  top: 0;
 
   @media (min-width: @tablet-width) {
     top: 10px;
   }
 
-  background-image: url("../../img/offers-arrow.svg");
+  background-image: url("../img/offers-arrow.svg");
   background-repeat: no-repeat;
 }
 
 .offers__link:hover::before {
-  background-image: url("../../img/offers-arrow-hover.svg");
+  background-image: url("../img/offers-arrow-hover.svg");
   background-repeat: no-repeat;
   right: 0;
   top: 2px;
@@ -259,7 +263,7 @@
 }
 
 .offers__link:active::before {
-  background-image: url("../../img/offers-arrow-hover.svg");
+  background-image: url("../img/offers-arrow-hover.svg");
   background-repeat: no-repeat;
   right: 0;
   top: 2px;
