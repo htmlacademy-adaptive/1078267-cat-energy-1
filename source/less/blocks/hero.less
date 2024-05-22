@@ -17,6 +17,7 @@
     background-size: 320px 302px;
     background-position: top;
     object-fit: cover;
+    box-sizing: border-box;
   }
 
   @media (min-width: @tablet-width) {
@@ -29,8 +30,13 @@
     color: @basic_black;
 
     &::before {
+      position: static;
+      content: none;
       background-color: @basic_white;
       background-image: none;
+      width: unset;
+      height: unset;
+      background-position: unset;
     }
   }
 
@@ -50,7 +56,7 @@
       );
       background-position: left;
       top: -120px;
-      right: 0;
+      right: -7px;
       z-index: -1;
     }
 
@@ -174,8 +180,9 @@
 
 .hero__button {
   @media (min-width: @tablet-width) {
-    width: 280px;
+    width: 244px;
     z-index: 1;
     text-wrap: wrap;
+    box-sizing: border-box;
   }
 }

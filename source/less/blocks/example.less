@@ -18,7 +18,7 @@
     content: "";
     width: 100%;
     height: 78%;
-    top: 57%;
+    top: 57.25%;
     background-position: bottom;
     background-color: @basic_grey-2;
     z-index: -1;
@@ -140,8 +140,8 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 162px);
     column-gap: 43px;
-    width: 366px;
-    margin-right: 169px;
+    width: 367px;
+    margin-right: 170px;
     margin-bottom: 0;
   }
 
@@ -149,6 +149,7 @@
     column-gap: 42px;
     margin-bottom: 58px;
     margin-right: 0;
+    width: 366px;
   }
 }
 
@@ -187,21 +188,21 @@
   width: 77px;
   background-color: @basic_grey-2;
   padding: 0 4px;
-  bottom: -14.5px;
-  left: 18px;
+  bottom: -14px;
+  left: 21px;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 125px;
-    padding: 0 8px;
-    bottom: -4px;
-    left: 9px;
+    padding: 0;
+    bottom: -5px;
+    left: 7px;
     font-size: 14px;
     line-height: 14px;
     background-color: @basic_white;
-    width: 125px;
+    width: 145px;
     text-wrap: wrap;
   }
 
@@ -222,8 +223,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    min-width: 327px;
-    width: 436px;
+    width: 327px;
     z-index: 1;
   }
 }
