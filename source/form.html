@@ -49,9 +49,11 @@
     <h1 class="visually-hidden">Подбор программы</h1>
     <section class="nutrition">
       <div class="nutrition__wrapper">
-        <h2 class="nutrition__title">Подбор программы</h2>
+        <div class="nutrition__container">
+          <h2 class="nutrition__title">Подбор программы</h2>
+          <p class="nutrition__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
         <form class="nutrition__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <div class="form__container">
             <div class="form__client">
               <h2 class="visually-hidden">Характеристики клиента</h2>
@@ -101,79 +103,88 @@
             </fieldset>
           </div>
           <div class="form__owner">
-            <h2 class="form__title form__owner-title">Контактные данные (владельца кота)</h2>
-            <div class="form__wrapper">
-              <div class="form__text">
-                <label class="form__label" for="owner-mail">E-mail:*
-                </label>
-                <div class="form__field-wrapper form__field-wrapper--email">
-                  <input class="form__field" type="email" id="owner-mail" name="owner-mail"
-                    placeholder="kuklachev@gmail.com" required>
-                  <svg class="form__field-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+            <div class="form__owner-container">
+              <h2 class="form__title form__owner-title">Контактные данные (владельца кота)</h2>
+              <div class="form__wrapper">
+                <div class="form__text">
+                  <label class="form__label" for="owner-mail">E-mail:*
+                  </label>
+                  <div class="form__field-wrapper form__field-wrapper--email">
+                    <input class="form__field" type="email" id="owner-mail" name="owner-mail"
+                      placeholder="kuklachev@gmail.com" required>
+                    <svg class="form__field-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
+                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              <div class="form__text">
-                <label class="form__label" for="owner-phone">Телефон:*</label>
-                <div class="form__field-wrapper form__field-wrapper--tel">
-                  <input class="form__field" type="tel" id="owner-phone" name="owner-phone"
-                    placeholder="8 (960) 900-60-90" required>
-                  <svg class="form__field-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                <div class="form__text">
+                  <label class="form__label" for="owner-phone">Телефон:*</label>
+                  <div class="form__field-wrapper form__field-wrapper--tel">
+                    <input class="form__field" type="tel" id="owner-phone" name="owner-phone"
+                      placeholder="8 (960) 900-60-90" required>
+                    <svg class="form__field-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
+                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="form__comment">
-            <h2 class="form__title form__comment-title">Комментарий</h2>
-            <p class="form__comment-text">
-              <label class="form__label" for="comment-text"></label>
-              <textarea class="form__field form__comment-content" id="comment-text"
-                name="comment-text">Расскажите обо всех повАдках кота</textarea>
-            </p>
+            <div class="form__comment-container">
+              <h2 class="form__title form__comment-title">Комментарий</h2>
+              <p class="form__comment-text">
+                <label class="form__label" for="comment-text"></label>
+                <textarea class="form__field form__comment-content" id="comment-text"
+                  name="comment-text">Расскажите обо всех повАдках кота</textarea>
+              </p>
+            </div>
           </div>
+
           <fieldset class="form__additional">
-            <legend class="form__title form__additional-title">Дополнительно</legend>
-            <h2 class="visually-hidden">Заказать дополнительные ингридиенты</h2>
-            <ul class="form__additional-list form-list">
-              <li class="form__additional-item form-item">
-                <label class="form__select">
-                  <input class="form__input visually-hidden" type="checkbox" name="sugar" value="none"
-                    checked="checked">
-                  <span class="form__mark"></span>
-                  <span>Сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="form__additional-item form-item">
-                <label class="form__select">
-                  <input class="form__input visually-hidden" type="checkbox" name="water" value="none">
-                  <span class="form__mark"></span>
-                  <span>питьевая вода</span>
-                </label>
-              </li>
-              <li class="form__additional-item form-item">
-                <label class="form__select">
-                  <input class="form__input visually-hidden" type="checkbox" name="milk" value="none">
-                  <span class="form__mark"></span>
-                  <span>молоко</span>
-                </label>
-              </li>
-              <li class="form__additional-item form-item">
-                <label class="form__select">
-                  <input class="form__input visually-hidden" type="checkbox" name="vitamins" value="none">
-                  <span class="form__mark"></span>
-                  <span>витамины</span>
-                </label>
-              </li>
-            </ul>
+            <div class="form__additional-container">
+              <legend class="form__title form__additional-title">Дополнительно</legend>
+              <h2 class="visually-hidden">Заказать дополнительные ингридиенты</h2>
+              <ul class="form__additional-list form-list">
+                <li class="form__additional-item form-item">
+                  <label class="form__select">
+                    <input class="form__input visually-hidden" type="checkbox" name="sugar" value="none"
+                      checked="checked">
+                    <span class="form__mark"></span>
+                    <span>Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="form__additional-item form-item">
+                  <label class="form__select">
+                    <input class="form__input visually-hidden" type="checkbox" name="water" value="none">
+                    <span class="form__mark"></span>
+                    <span>питьевая вода</span>
+                  </label>
+                </li>
+                <li class="form__additional-item form-item">
+                  <label class="form__select">
+                    <input class="form__input visually-hidden" type="checkbox" name="milk" value="none">
+                    <span class="form__mark"></span>
+                    <span>молоко</span>
+                  </label>
+                </li>
+                <li class="form__additional-item form-item">
+                  <label class="form__select">
+                    <input class="form__input visually-hidden" type="checkbox" name="vitamins" value="none">
+                    <span class="form__mark"></span>
+                    <span>витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
+
           <div class="form__button-wrapper">
             <button class="form__button button-main" type="submit">Отправить
               заявку</button>
