@@ -32,6 +32,10 @@
 
 .main-footer__link {
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 160px;
+  }
 }
 
 .main-footer__image {
@@ -39,13 +43,11 @@
   border-bottom: 1px solid @special_grey-3;
 
   @media (min-width: @tablet-width) {
-    margin-right: 160px;
     padding: 8px 0;
     border-bottom: none;
   }
 
   @media (min-width: @tablet-width) {
-    margin-right: 416px;
     padding: 7px 0;
   }
 }
@@ -70,13 +72,9 @@
   border-bottom: 1px solid @special_grey-3;
 
   @media (min-width: @tablet-width) {
-    margin-right: 120px;
     border-bottom: none;
     padding: 3px 0 8px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-right: 376px;
+    margin-right: 120px;
   }
 }
 

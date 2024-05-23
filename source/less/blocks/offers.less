@@ -1,8 +1,17 @@
 .offers {
+  width: 100%;
+}
+
+.offers__list {
   margin: 0 auto;
   padding: 20px;
   width: 320px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -11,25 +20,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 61px;
-    padding: 0 110px;
-    width: 1440px;
-  }
-}
-
-.offers__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  gap: 20px;
-  list-style-type: none;
-
-  @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     gap: 80px;
+    margin-bottom: 71px;
+    padding: 0 110px;
+    width: 1440px;
   }
 }
 
