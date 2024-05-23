@@ -35,7 +35,7 @@
 }
 
 .nutrition__title {
-  width: 259px;
+  width: 260px;
   margin: 0;
   margin-bottom: 37px;
   padding: 0;
@@ -62,13 +62,13 @@
   line-height: 18px;
   color: @basic_black;
   text-transform: uppercase;
-  max-width: 226px;
+  width: 226px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
     font-size: 20px;
     line-height: 30px;
-    max-width: 323px;
+    width: 323px;
   }
 }
 
@@ -147,8 +147,7 @@
 }
 
 .form__label {
-  min-width: 39px;
-  max-width: 94px;
+  width: 39px;
   margin-right: 13px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -160,17 +159,25 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    max-width: 116px;
+    width: 47px;
     margin-right: 14px;
   }
 }
 
 .form__label--weight {
-  min-width: 60px;
+  width: 60px;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+  }
 }
 
 .form__label--age {
-  min-width: 94px;
+  width: 94px;
+
+  @media (min-width: @tablet-width) {
+    width: 117px;
+  }
 }
 
 .form__field-wrapper {
@@ -479,12 +486,12 @@
   width: 100%;
   height: 2px;
   background-color: @basic_green;
-  top: 20px;
+  top: 15px;
   left: 0;
   z-index: -2;
 
   @media (min-width: @tablet-width) {
-    top: 20px;
+    top: 22px;
     left: 0;
   }
 
@@ -558,17 +565,17 @@
   width: 100%;
   height: 2px;
   background-color: @basic_green;
-  top: 20px;
+  top: 15px;
   left: 0;
   z-index: -2;
 
   @media (min-width: @tablet-width) {
-    top: 20px;
+    top: 21px;
     left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    top: 20px;
+    top: 22px;
     left: 0;
   }
 }
@@ -601,20 +608,7 @@
 
 .form__additional {
   margin: 0;
-  margin-bottom: 34px;
   padding: 0;
-  border: none;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 59px;
-  }
-}
-
-.form__additional {
   width: 100%;
   position: relative;
   border: none;
@@ -668,7 +662,7 @@
   width: 100%;
   height: 2px;
   background-color: @basic_green;
-  top: 20px;
+  top: 15px;
   left: 0;
   z-index: -2;
 
@@ -678,7 +672,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 20px;
+    top: 23px;
     left: 0;
   }
 }
@@ -744,8 +738,8 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 708px;
-    padding: 0 30px;
+    width: 768px;
+    padding: 0 180px 0 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -758,12 +752,12 @@
   margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
-    min-width: 284px;
+    width: 284px;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 570px;
+    width: 570px;
     margin-bottom: 0;
   }
 }

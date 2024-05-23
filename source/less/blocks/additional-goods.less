@@ -1,12 +1,11 @@
 .additional-goods {
   width: 100%;
-  padding-top: 20px;
+  padding: 0;
   margin-bottom: 35px;
   position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 75px;
-    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,16 +16,17 @@
 .additional-goods__centerer {
   margin: 0 auto;
   padding: 0 20px;
-  width: 280px;
+  width: 320px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     padding: 0 30px;
-    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1440px;
     padding: 0 110px;
-    width: 1220px;
   }
 }
 
@@ -52,7 +52,7 @@
     padding-right: 40px;
     padding-left: 40px;
     text-wrap: wrap;
-    min-width: 340px;
+    width: 340px;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,7 +67,7 @@
   width: 100%;
   height: 2px;
   background-color: @basic_green;
-  top: 38px;
+  top: 20px;
   left: 0;
   z-index: -2;
 
@@ -121,7 +121,7 @@
   border-top: 1px solid @special_grey;
 
   @media (min-width: @tablet-width) {
-    max-width: 708px;
+    width: 708px;
     flex-wrap: wrap;
     padding: 27px 38px;
   }
@@ -131,9 +131,8 @@
     grid-template-columns: 618px 244px;
     column-gap: 33px;
     padding: 16px 0 15px;
-    min-width: 890px;
     align-items: center;
-    max-width: none;
+    width: unset;
   }
 }
 
@@ -213,10 +212,14 @@
   padding: 10px 26px;
 
   @media (min-width: @tablet-width) {
-    max-width: 632px;
+    width: 632px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
   }
 }
 
@@ -236,8 +239,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 71px 125px 69px 431px;
-    width: 707px;
+    padding: 71px 125px 69px 421px;
+    width: 708px;
     background-image: url("../img/gift-tablet.png");
     background-size: 707px 200px;
 
@@ -264,7 +267,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  max-width: 161px;
+  width: 161px;
   text-align: center;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
