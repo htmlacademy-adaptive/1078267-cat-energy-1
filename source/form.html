@@ -20,6 +20,7 @@
 
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__wrapper">
     <a class="main-header__logo main-header__logo--form" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
@@ -44,6 +45,7 @@
           меню</span>
       </button>
     </nav>
+    </div>
   </header>
   <main class="main-wrapper">
     <h1 class="visually-hidden">Подбор программы</h1>
@@ -64,12 +66,12 @@
                   required>
               </span>
               <span class="form__text">
-                <label class="form__label form__label--weight" for="client-weight">Вес (кг):*
+                <label class="form__label" for="client-weight">Вес (кг):*
                 </label>
                 <input class="form__field" type="text" id="client-weight" name="client-weight" placeholder="7" required>
               </span>
               <span class="form__text">
-                <label class="form__label form__label--age" for="client-age">Возраст (лет):
+                <label class="form__label" for="client-age">Возраст (лет):
                 </label>
                 <input class="form__field" type="text" id="client-age" name="client-age" placeholder="7">
               </span>
