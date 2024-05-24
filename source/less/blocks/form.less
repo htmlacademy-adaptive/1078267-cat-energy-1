@@ -147,7 +147,8 @@
 }
 
 .form__label {
-  width: 39px;
+  min-width: 39px;
+  max-width: 117px;
   margin-right: 13px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -159,24 +160,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 47px;
     margin-right: 14px;
-  }
-}
-
-.form__label--weight {
-  width: 60px;
-
-  @media (min-width: @tablet-width) {
-    width: 75px;
-  }
-}
-
-.form__label--age {
-  width: 94px;
-
-  @media (min-width: @tablet-width) {
-    width: 117px;
   }
 }
 
